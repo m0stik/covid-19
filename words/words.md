@@ -22,7 +22,7 @@
 	</div>
 </div>
 
-"Єдине, чого треба боятися, це страху самого по собі" було не найкращою порадою.
+"Єдине, чого можна боятися, це страх" було тупою порадою.
 
 Авжеж, не скуповуй туалетний папір - але якщо політики самі бояться страху, вони знецінюватимуть реальні небезпеки, щоб уникнути "масової паніки". Страх не є проблемою, проблема те, як ми "транслюємо" наш страх. Він дає нам енергію, щоб впоратися з нагальними небезпеками та підготуватися до небезпек майбутнього.
 
@@ -95,7 +95,7 @@
 
 Заради спрощення, уявімо, що всі <icon i></icon> Інфіковані стають <icon r></icon> Одужавшими. (Просто пам'ятай, що у реальності деякі помирають.) <icon r></icon> не можуть заразитися знову, і уявімо – *лише зараз* – що вони мають імунітет на все життя.
 
-Згідно оцінок щодо COVID-19, ти залишаєшся <icon i></icon> Інфікованим *в середньому* на десять днів.[^infectiousness] Це значить, що хтось одужає менш ніж за 10 днів, хтось більше. **Ось як це виглядає з симуляцією, яка *починається* з 100% <icon i></icon>:**
+Згідно з оцінками щодо COVID-19, ти залишаєшся <icon i></icon> Інфікованим *в середньому* на десять днів.[^infectiousness] Це значить, що хтось одужає менш ніж за 10 днів, хтось більше. **Ось як це виглядає з симуляцією, яка *починається* з 100% <icon i></icon>:**
 
 [^infectiousness]: “Медіанний період передачі \[...\] був 9.5 днів.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Так, ми знаємо, що "медіанний" не тотожно "середньому". Достатньо наближено для освітніх цілей.
 
@@ -103,48 +103,48 @@
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
 </div>
 
-This is the opposite of exponential growth, the **exponential decay curve.**
+Це протилежність експоненційного зростання, **експоненційна крива згасання.**
 
-Now, what happens if you simulate S-shaped logistic growth *with* recovery?
+Що стається, якщо ми симуляємо S-криву логістичного зростання *з* одужанням?
 
 ![](pics/graphs_q.png)
 
-Let's find out.
+Давайте поглянемо.
 
-<b style='color:#ff4040'>Red curve</b> is *current* cases <icon i></icon>,    
-<b style='color:#999999'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>),
-starts at just 0.001% <icon i></icon>:
+<b style='color:#ff4040'>Червона крива</b> це *поточні* випадки <icon i></icon>,    
+<b style='color:#999999'>Сіра крива</b> це *загальна* кількість випадків (поточні + одужавші <icon r></icon>),
+починається з лише 0.001% <icon i></icon>:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-4" width="800" height="540"></iframe>
 </div>
 
-And *that's* where that famous curve comes from! It's not a bell curve, it's not even a "log-normal" curve. It has no name. But you've seen it a zillion times, and beseeched to flatten.
+І *це* звідки походить та сама відома крива! Це не дзвіноподібна крива і навіть не "логнормальна" крива. Вона не має назви. Але ти бачив(ла) її мільярди разів, заприсягшись вирівняти криву.
 
-This is the the **SIR Model**,[^sir]    
-(<icon s></icon>**S**usceptible <icon i></icon>**I**nfectious <icon r></icon>**R**ecovered)      
-the *second*-most important idea in Epidemiology 101:
+Це **ВІО Модель**,[^sir]    
+(<icon s></icon>**В**разливі <icon i></icon>**І**нфіковані <icon r></icon>**О**дужавші)      
+*друга* найважливіша ідея Епідеміології 101:
 
-[^sir]: For more technical explanations of the SIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
+[^sir]: Для більш технічних пояснень Моделі ВІО, читай [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-sir.html#) та [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SIR_model)
 
 ![](pics/sir.png)
 
-**NOTE: The simulations that inform policy are way, *way* more sophisticated than this!** But the SIR Model can still explain the same general findings, even if missing the nuances.
+**Примітка: Симуляції, якими формують політику, набагато, *набагато* складніші, ніж ці!** Але ВІО Модель може пояснити ті ж загальні відкриття, навіть якщо бракує деталей. 
 
-Actually, let's add one more nuance: before an <icon s></icon> becomes an <icon i></icon>, they first become <icon e></icon> Exposed. This is when they have the virus but can't pass it on yet – infect*ed* but not yet infect*ious*.
+Насправді, додаймо одну деталь: перед тим, як <icon s></icon> стають <icon i></icon>, вони спершу стають <icon e></icon> Тими, хто були у контакті. Це той період, коли вони вже мають вірус, але не можуть інфікувати інших.
 
 ![](pics/seir.png)
 
-(This variant is called the **SEIR Model**[^seir], where the "E" stands for <icon e></icon> "Exposed". Note this *isn't* the everyday meaning of "exposed", when you may or may not have the virus. In this technical definition, "Exposed" means you definitely have it. Science terminology is bad.)
+(Цей варіант називається **ВІОК Модель**[^seir], де "К" означає <icon e></icon> "Ті, хто були у контакті". Зверни увагу, що *Ті, зто були у контакті* вживаються не у звичному значенні, коли ти зараження могло відбуватися або ні. У цьому технічному визначенні, "Ті, хто були у контакті" точно мають вірус. Ох ця наукова термінологія.)
 
-[^seir]: For more technical explanations of the SEIR Model, see [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) and [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
+[^seir]: Для більш технічного пояснення ВІОК Моделі, читай [the Institute for Disease Modeling](https://www.idmod.org/docs/hiv/model-seir.html) та [Wikipedia](https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology#The_SEIR_model)
 
-For COVID-19, it's estimated that you're <icon e></icon> infected-but-not-yet-infectious for 3 days, *on average*.[^latent] What happens if we add that to the simulation?
+Згідно з оцінками COVID-19, ти <icon e></icon> інфікований, але не розповсюджуєш інфекцію *в середньому* протягом 3 днів.[^latent] Що відбувається, коли ми додаємо це до симуляції?
 
-[^latent]: “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
+[^latent]: “Припускаючи, що інкубаційний період розподілення в середньому 5.2 days з іншого дослідженна ранніх випадків COVID-19, ми зробили висновок, що розповсюдження вірусу починалося з 2.3 days (95% CI, 0.8–3.0 дні) перед появою симптомів” (переклад: Припускаючи, що симптоми розпочинаються з 5 дня, розповсюдження починається 2 дні раніше = Розповсюдження починається з 3 дня) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)
 
-<b style='color:#ff4040'>Red <b style='color:#FF9393'>+ Pink</b> curve</b> is *current* cases (infectious <icon i></icon> + exposed <icon e></icon>),    
-<b style='color:#888'>Gray curve</b> is *total* cases (current + recovered <icon r></icon>):
+<b style='color:#ff4040'>Червона <b style='color:#FF9393'>+ Рожева</b> крива</b> це *поточні* виподки (активні носії <icon i></icon> + інфіковані <icon e></icon>),    
+<b style='color:#888'>Сіра крива</b> це *загальна* кількість випадків (поточні + одужавші <icon r></icon>):
 
 <div class="sim">
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
