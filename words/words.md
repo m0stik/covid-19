@@ -2,102 +2,102 @@
     <div>
     	<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
         <div style="top: 70px;font-size: 75px;font-weight: bold;">
-        	What Happens Next?
+        	Що буде далі?
        	</div>
 		<div style="font-weight: 500;top: 140px;left: 10px;font-size: 29px;">
-			COVID-19 Futures, Explained With Playable Simulations
+			Майбутнє COVID-19 у інтерактивних симуляціях
 		</div>
 		<div style="font-weight: 100;top: 189px;left: 10px;font-size: 19px;line-height: 21px;">
 			<b>
-				🕐 30 min play/read
+				🕐 30 хв гри/читання
 				&nbsp;&middot;&nbsp;
 			</b>
-			by
+			створили
 			<a href="https://scholar.google.com/citations?user=_wHMGkUAAAAJ&amp;hl=en">Marcel Salathé</a>
-			(epidemiologist)
-			&
+			(епідеміолог)
+			та
 			<a href="https://ncase.me/">Nicky Case</a>
-			(art/code)
+			(ілюстрації/код)
 		</div>
 	</div>
 </div>
 
-"The only thing to fear is fear itself" was stupid advice.
+"Єдине, чого треба боятися, це страху самого по собі" було не найкращою порадою.
 
-Sure, don't hoard toilet paper – but if policymakers fear fear itself, they'll downplay real dangers to avoid "mass panic". Fear's not the problem, it's how we *channel* our fear. Fear gives us energy to deal with dangers now, and prepare for dangers later.
+Авжеж, не скуповуй туалетний папір - але якщо політики самі бояться страху, вони знецінюватимуть реальні небезпеки, щоб уникнути "масової паніки". Страх не є проблемою, проблема те, як ми "транслюємо" наш страх. Він дає нам енергію, щоб впоратися з нагальними небезпеками та підготуватися до небезпек майбутнього.
 
-Honestly, we (Marcel, epidemiologist + Nicky, art/code) are worried. We bet you are, too! That's why we've channelled our fear into making these **playable simulations**, so that *you* can channel your fear into understanding:
+Направду, ми (Марсель, епідеміолог та Ніккі, ілюстрації/код) стурбовані. Можемо побитися об заклад, що ти теж! Тому ми спрямували наш страх у створення цих **інтерактивних симуляцій**, щоб ти міг спрямувати свій страх у розуміння: 
 
-* **The Last Few Months** (epidemiology 101, SEIR model, R & R<sub>0</sub>)
-* **The Next Few Months** (lockdowns, contact tracing, masks)
-* **The Next Few Years** (loss of immunity? no vaccine?)
+* **Останні декілька місяців** (епідеміологія 101, SEIR модель, R & R<sub>0</sub>)
+* **Наступні декілька місяців** (закриття країн, відстежування контактів, маски)
+* **Наступні декілька років** (втрата імунітету? немає вакцини?)
 
-This guide (published May 1st, 2020. click this footnote!→[^timestamp]) is meant to give you hope *and* fear. To beat COVID-19 **in a way that also protects our mental & financial health**, we need optimism to create plans, and pessimism to create backup plans. As Gladys Bronwyn Stern once said, *“The optimist invents the airplane and the pessimist the parachute.”*
+Цей гайд (опублікований 1 травня, 2020. натисни на примітку!→[^timestamp]) має за мету дати тобі надію ТА страх. Щоб подолати COVID-19 **у спосіб який також захищає наше ментальне та фінансове здоров'я**, нам потрібний оптимізм, щоб будувати плани, та песимізм, щоб мати план Б. Як сказав Gladys Bronwyn Stern, *“Оптиміст будує літаки, а песиміст шиє парашути.”*
 
-[^timestamp]: These footnotes will have sources, links, or bonus commentary. Like this commentary!
+[^timestamp]: Ці примітки міститимуть джерела, посилання чи бонусні коментарі. Як оцей коментар!
     
-    **This guide was published on May 1st, 2020.** Many details will become outdated, but we're confident this guide will cover 95% of possible futures, and that Epidemiology 101 will remain forever useful.
+    **Цей гайд було опубліковано 1 травня, 2020.** Багато деталей застарішають, але ми впевнені, що гайд охопить 95% сценаріїв майбутнього і що Епідеміологія 101 буде корисною завжди. 
 
-So, buckle in: we're about to experience some turbulence.
+Тож пристебнися: ось-ось ми потрапимо в зону турбулентності.
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Last Few Months</div>
+        <div>Останні декілька місяців</div>
     </div>
 </div>
 
-Pilots use flight simulators to learn how not to crash planes.
+Пілоти користуються симуляторами польотів, щоб навчитися, як не нищити літаки.
 
-**Epidemiologists use epidemic simulators to learn how not to crash humanity.**
+**Епідеміологи користуються симуляторами епідемій, щоб навчитися, як не винищити людство.**
 
-So, let's make a very, *very* simple "epidemic flight simulator"! In this simulation, <icon i></icon> Infectious people can turn <icon s></icon> Susceptible people into more <icon i></icon> Infectious people:
+Тож давай зробимо дуже, дуже простий "епідеміологічний симулятор польотів"! У цій симуляції, <icon i></icon> Інфіковані люди можуть перетворити <icon s></icon> Вразливих (?) людей у більше <icon i></icon> Інфікованих людей:
 
 ![](pics/spread.png)
 
-It's estimated that, *at the start* of a COVID-19 outbreak, the virus jumps from an <icon i></icon> to an <icon s></icon> every 4 days, *on average*.[^serial_interval] (remember, there's a lot of variation)
+Згідно з оцінками, напочатку спалаху COVID-19, вірус перестрибує з <icon i></icon> до <icon s></icon> кожні 4 дні, *в середньому*.[^serial_interval] (не забувай, це часто варіюється)
 
-[^serial_interval]: “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Disclaimer: Early release articles are not considered as final versions)
+[^serial_interval]: "Середній [serial] інтервал був 3.96 днів (95% CI 3.53–4.39 days)”. [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article) (Дисклеймер: Ранні видання статті не вважаються фінальними версіями)
 
-If we simulate "double every 4 days" *and nothing else*, on a population starting with just 0.001% <icon i></icon>, what happens? 
+Якщо ми симуляємо "подвоєння кожні 4 дні" *і нічого більше*, у населення, починаючи з 0.001% <icon i></icon>, що станеться? 
 
-**Click "Start" to play the simulation! You can re-play it later with different settings:** (technical caveats: [^caveats])
+**Натисни"Старт", щоб зіграти в симуляцію! Ти можеш перепрограти її пізніше з іншим налаштуваннями:** (технічна обмовка: [^caveats])
 
-[^caveats]: **Remember: all these simulations are super simplified, for educational purposes.**
+[^caveats]: **Пам'ятай: усі ці симуляції дуже спрощені для освітніх цілей.**
     
-    One simplification: When you tell this simulation "Infect 1 new person every X days", it's actually increasing # of infected by 1/X each day. Same for future settings in these simulations – "Recover every X days" is actually reducing # of infected by 1/X each day.
+    Одне спрощення: Коли ти кажеш цій симуляції "Інфікуй 1 людину кожні X днів", вона наспрвдні збільшує # інфікованих на 1/X кожного дня. Те ж відбувається у наступних параметрах цих симуляцій – "Одужує кожні X днів" насправді зменшує # інфікованих на 1/X кожного дняю
     
-    Those *aren't* exactly the same, but it's close enough, and for educational purposes it's less opaque than setting the transmission/recovery rates directly.
+    Вони не є тотожними, але достатньо наближені, і у освітніх цілях більш зрозумілі, ніж пряме введення показників передачі та одужання.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-1" width="800" height="540"></iframe>
 </div>
 
-This is the **exponential growth curve.** Starts small, then explodes. "Oh it's just a flu" to "Oh right, flus don't create *mass graves in rich cities*". 
+Це **пряма експоненційного зростання.** Починає потихеньку, потім вибухає. Від "Ой та це ж просто ОРВІ" до "Добре, застуди не створюють *масові кладовища у багатих містах*". 
 
 ![](pics/exponential.png)
 
-But, this simulation is wrong. Exponential growth, thankfully, can't go on forever. One thing that stops a virus from spreading is if others *already* have the virus:
+Але ця симуляція не вірна. На щастя, експоненційне зростання не може продовжуватися вічно. Одна річ, яка зупиняє вірус від поширення, це коли інші "вже" мали вірус:
 
 ![](pics/susceptibles.png)
 
-The more <icon i></icon>s there are, the faster <icon s></icon>s become <icon i></icon>s, **but the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s.**
+Чим більше <icon i></icon>, тим швидше <icon s></icon> стають <icon i></icon>, **але чим менше <icon s></icon>, тим *повільніше* <icon s></icon> стають <icon i></icon>.**
 
-How's this change the growth of an epidemic? Let's find out:
+Як це змінює зростання епідемії? Давайте дізнаємося:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-2" width="800" height="540"></iframe>
 </div>
 
-This is the "S-shaped" **logistic growth curve.** Starts small, explodes, then slows down again.
+Це **логістична крива зростання.** у формі S. Починає з малого, вибухає, потім знову сповільнюється.
 
-But, this simulation is *still* wrong. We're missing the fact that <icon i></icon> Infectious people eventually stop being infectious, either by 1) recovering, 2) "recovering" with lung damage, or 3) dying.
+Але ця симуляція *все ще* не вірна. Ми оминаємо той факт, що <icon i></icon> Інфіковані люди врешті-решт перестають переносити інфекцію, коли 1) одужують, 2) "одужуть" з ураженими легенями або 3) помирають.
 
-For simplicity's sake, let's pretend that all <icon i></icon> Infectious people become <icon r></icon> Recovered. (Just remember that in reality, some are dead.) <icon r></icon>s can't be infected again, and let's pretend – *for now!* – that they stay immune for life.
+Заради спрощення, уявімо, що всі <icon i></icon> Інфіковані стають <icon r></icon> Одужавшими. (Просто пам'ятай, що у реальності деякі помирають.) <icon r></icon> не можуть заразитися знову, і уявімо – *лише зараз* – що вони мають імунітет на все життя.
 
-With COVID-19, it's estimated you're <icon i></icon> Infectious for 10 days, *on average*.[^infectiousness] That means some folks will recover before 10 days, some after. **Here's what that looks like, with a simulation *starting* with 100% <icon i></icon>:**
+Згідно оцінок щодо COVID-19, ти залишаєшся <icon i></icon> Інфікованим *в середньому* на десять днів.[^infectiousness] Це значить, що хтось одужає менш ніж за 10 днів, хтось більше. **Ось як це виглядає з симуляцією, яка *починається* з 100% <icon i></icon>:**
 
-[^infectiousness]: “The median communicable period \[...\] was 9.5 days.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Yes, we know "median" is not the same as "average". For simplified educational purposes, close enough.
+[^infectiousness]: “Медіанний період передачі \[...\] був 9.5 днів.” [Hu, Z., Song, C., Xu, C. et al](https://link.springer.com/article/10.1007/s11427-020-1661-4) Так, ми знаємо, що "медіанний" не тотожно "середньому". Достатньо наближено для освітніх цілей.
 
 <div class="sim">
 		<iframe src="sim?stage=epi-3" width="800" height="540"></iframe>
