@@ -690,20 +690,20 @@ Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^
 
 [^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
-Teams of epidemiologists and policymakers ([left](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [right](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), and [multi-partisan](https://ethics.harvard.edu/covid-roadmap)) have come to a consensus on how to beat COVID-19, while protecting our lives *and* liberties.
+Команди епідеміологів та політиків ([лівих](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [правих](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), та [багатопартійних](https://ethics.harvard.edu/covid-roadmap)) мають певний консенсус в тому як побороти COVID-19, тим часом захищаючи наші життя *та* своботи.
 
-Here's the rough idea, with some (less-consensus) backup plans:
+Ось приблизна ідея, з деякими (менш популярними) запасними планами:
 
 ![](pics/plan.png)
 
-So what does this mean for YOU, right now?
+То що це значить для ВАС, зараз?
 
-**For everyone:** Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a *privacy-protecting* contact tracing app when those are available next month. Stay healthy, physically & mentally! And write your local policymaker to get off their butt and...
+**Для всіх:** Поважайте карантин, щоб ми всі могли вийти з першої фази якмога швидке. Продовжуйте мити ті руки. Робіть свої власні маски для обличчя. Завантажуйте додатки для відстеження контактів *які поважають приватність*, після того як вони стануть доступні через декілька місяців. Будьте здорові, фізично та психологічно! Та пишіть своїй місцевій владі підняти свою дупу і...
 
-**For policymakers:** Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, *supported* by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...
+**Для політиків:** Створюйте закони для підтримки людей які мають бути в самоізоляці/карантині. Наймайте більше людей для відстеження контактованих людей, яким будуть *допомогати* додатки *які поважають приватність* відстеження контактів. Виділяйте більше коштів до речей які ми маємо будувати, як наприклад...
 
-**For builders:** Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope. 
+**Для виробників/творців:** Створюйте тести. Створюйте вентилятори. Створюйте персональні засоби захисту для лікарень. Створюйте тести. Створюйте вентилятори. Створюйте додатки. Створюйте противірусні, профілактичні та інші засоби, крім вакцин. Створюйте вакцини. Створюйте тести. Створюйте тести. Створюйте тести. Створюйте надію.
 
-Don't downplay fear to build up hope. Our fear should *team up* with our hope, like the inventors of airplanes & parachutes. Preparing for horrible futures is how we *create* a hopeful future.
+Не знецінюйте страх, щоб створювати надію. Наш страх має *йти в крок* з нашою надією, як винахідники літаків та парашутів. Готуючись до страшного майбутнього, ми *формуємо* обнадійливе майбутнє.
 
-The only thing to fear is the idea that the only thing to fear is fear itself.
+Єдина річ яке ми маємо боятись, це ідея що єдине чого нам требя боятись, це страху самого по собі. ***TODO***
