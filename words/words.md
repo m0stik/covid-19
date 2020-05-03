@@ -603,92 +603,92 @@ For these simulations, let's say it's 1 year.
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-Return of the exponential decay!
+І знову крива експоненційного згасання!
 
-This is the **SEIRS Model**. The final "S" stands for <icon s></icon> Susceptible, again.
+Це є модель **SEIRS**. Де літера "S" (від англ. Susceptible) позначає <icon s></icon> сприйнятливих, знову.
 
 ![](pics/seirs.png)
 
-Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... *if immunity only lasts a year:*
+А зараз, давайте просимулюємо спалах COVID-19, протягом 10 років, без заходів втручання... *якщо імунітет діє лише один рік:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 </div>
 
-In previous simulations, we only had *one* ICU-overwhelming spike. Now, we have several, *and* <icon i></icon> cases come to a rest *permanently at* ICU capacity. (Which, remember, we *tripled* for these simulations)
+В попередній симуляції ми спостерігали лише *один* спалах який перенавантажив палати інтенсивної терапіх, *та* кількість <icon i></icon> випадків залишається *завжди* рівна місткості палат інтенсивної терапії. (Що, знову зауважимо, ми збільшили *втричі* для цих симуляцій)
 
-R = 1, it's **endemic.**
+R = 1, це - **ендемія.**
 
-Thankfully, because summer reduces R, it'll make the situation better:
+На щастя, літо зменшує R, тому це зробить ситуацію краще:
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 </div>
 
-Oh.
+Ох.
 
-Counterintuitively, summer makes the spikes worse *and* regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, *creating* large regular spikes in the winter.
+Парадоксально, літо робить спалахи гіршими *та* регулярними! Через те, що літо зменшує кількість нових <icon i></icon>, але цим самим зменшує кількість людей з імунітетом <icon r></icon>. Що означає імунітет падає влітку, *створюючи* великі регулярні спалахи взимку.
 
-Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:
+На щастя, вирішення є дуже простим – вакцинуйте людей кожну осінь/зиму, так само як роблять це з щепленням від грипу:
 
-**(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)**
+**(Після прогавання запису, спробуйте симуляцію вашої власної кампанії вакцинації! Пам'ятайте що ви можете зупини та продовжити симуляцію в будь-який момент)**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-But here's the scarier question:
+Але ось ще страшніше питання:
 
-What if there's no vaccine for *years*? Or *ever?*
+Що буде якщо вакцини не буде *роками*? Або *взагалі*?
 
-**To be clear: this is unlikely.** Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and "the" common cold wasn't worth the investment. 
+**Щоб було зрозуміло: це малоймовірно.** Більшість епідеміологів очікують вакцину через 1-2 роки. Так, до цього ніколи не було вакцини для будь-якого іншого коронавірусу, але це через те, що SARS був викорінений швидко, а звичайна ГРВІ не варта того.
 
-Still, infectious disease researchers have expressed worries: What if we can't make enough?[^vax_enough] What if we rush it, and it's not safe?[^vax_safe]
+Тим не менш, дослідники інфекційних захворювань висловили свої переживання: Що буде якщо ми не можемо зробити дотстатньо? [^vax_enough] Що буде якщо ми поспішимо, та вона не буде безпечна? [^vax_safe]
 
-[^vax_enough]: “If a coronavirus vaccine arrives, can the world make enough?” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
+[^vax_enough]: “Якщо вакцина від коронавірусу з'явиться, чи зможе світ виробити її достатньо? (англ)” [by Roxanne Khamsi, on Nature](https://www.nature.com/articles/d41586-020-01063-8)
 
-[^vax_safe]: “Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
+[^vax_safe]: “Не спішіть задіювати COVID-19 вакцину або ліки без достатніх гарантій безпекиs” [by Shibo Jiang, on Nature](https://www.nature.com/articles/d41586-020-00751-9)
 
-Even in the nightmare "no-vaccine" scenario, we still have 3 ways out. From most to least terrible:
+Навіть у кошмарному "без-вакцини" сценарії, ми все одно маємо 3 виходи. Від найбільш до найменш страшних:
 
-1) Do intermittent or loose R < 1 interventions, to reach "natural herd immunity". (Warning: this will result in many deaths & damaged lungs. *And* won't work if immunity doesn't last.)
+1) Робити переривчасті або послаблені R < 1 втручання, щоб досягнути "колективний імунітет". (Увана: це призведе до багатьох смертей та пошкоджених легенів. *Та* не спрацює якщо імунітет не є дуже довгостроковим.)
 
-2) Do the R < 1 interventions forever. Contact tracing & wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests & wearing condoms became a new norm in the post-HIV world.
+2) Робити R < 1 заходи втручання постійно. Відстеження контактів та носіння масок стає новою нормою у після-COVID-19 світі, так само як ІПСШ тести та використання презервативу стали новою нормою у після-ВІЛ світі.
 
-3) Do the R < 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing *anyway!*) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:
+3) Робити R < 1 заходи втручання поки ми не створимо процедури лікування, що зроблять набагато, набагато менш шанс, що лікування COVID-19 вимагатиме інтенсивної терапії. (Не дивлячись на те, що ми *все одно маємо* це робити!) Зменшення кількості палатн інтенсивної терапії в 10 разів, те саме що збільшення кількості палат в 10 разів:
 
-**Here's a simulation of *no* lasting immunity, *no* vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:**
+**Ось симуляція *без* довговічний імунітету, *без* вакцини та навіть без будь-який заходів втручання - лише повільно збільшуйте місткість щоб пережити довгострокові спалахи**
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-Even under the *worst* worst-case scenario... life perseveres.
+Навіть у *найгіршому* з найгірших випадків... життя було врятовано.
 
 . . .
 
-Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your *own* combination of intervention plans!
+Можливо ви б хотіли заперечити нашим припущенням та спробувати інший R<sub>0</sub>'s або інші параметри. Або спробувати просимулювати вашу *власну* комбінацію заходи втручання!
 
-**Here's an (optional) Sandbox Mode, with *everything* available. (scroll to see all controls) Simulate & play around to your heart's content:**
+**Ось (необов'язковий) Режим Пісочниці, зі *всіма* параметрами. (Скрольте вниз щоб побачити всі параметри) Симулюйте та грайтесь скільки вашій душі завгодно:**
 
 <div class="sim">
 		<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 </div>
 
-This basic "epidemic flight simulator" has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.
+Основний "симулятор польоту епідемії" навчив нас багато чому. Він дав нам можливість відповісти на питання про декілька минулих місяців, декілька місяців у майбутньому та наступні роки.
 
-So finally, let's return to...
+Тому врешті-решт, давайте повернемось до...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Now</div>
+        <div>Сьогодення</div>
     </div>
 </div>
 
-Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.[^dry_land]
+Літак потонув. Ми заскочили на рятувальні плоти. Настав час щоб знайти нарешті землю.[^dry_land]
 
-[^dry_land]: Dry land metaphor [from Marc Lipsitch & Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
+[^dry_land]: Метафора про пошук землі [від Marc Lipsitch та Yonatan Grad, on STAT News](https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/)
 
 Команди епідеміологів та політиків ([лівих](https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/), [правих](https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/ ), та [багатопартійних](https://ethics.harvard.edu/covid-roadmap)) мають певний консенсус в тому як побороти COVID-19, тим часом захищаючи наші життя *та* своботи.
 
