@@ -245,98 +245,98 @@ R<sub>0</sub> для сезонних ОРВІ приблизно 1.28[^r0_flu].
 
 ...могли би бути ще гіршими. Ось паралельна реальність, якої ми уникли:
 
-###Scenario 0: Do Absolutely Nothing
+###Сценарій 0: Ніяк не діяти
 
-Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).[^icu_covid] In a rich country like the USA, there's 1 ICU bed per 3400 people.[^icu_us] Therefore, the USA can handle 20 out of 3400 people being *simultaneously* infected – or, 0.6% of the population.
+Приблизно 1 з 20 хворих на COVID-19 потребує палату інтенсивної терапії (ПІТ).[^icu_covid] У багатій країні як США, існує 1 ліжко у такій палаті на кожні 3400 людей.[^icu_us] Тож США може дозволити 20 з 3400 *одночасно* інфікованих людей - або ж 0.6% населення.
 
-[^icu_covid]: ["Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Between 4.9% to 11.5% of *all* COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations.
+[^icu_covid]: ["Відсоток випадків COVID-19 у США з 12 лютого по 16 березня, які потребували палати інтенсивної терапії, відповідно до вікових груп"](https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/). Від 4.9% до 11.5% *усіх* COVID-19 хворих потребували ПІТ. Навіть якщо рахувати з найнижчої межі, це 5% або 1 з 20. Зверни увагу, що ці числа відповідають особливостям вікового складу США і можуть бути вищими у країнах зі старішим населенням та нижче країнах з молодшим населенням.
 
-[^icu_us]: “Number of ICU beds = 96,596”. From [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. 
+[^icu_us]: “Кількість ліжок у ПІТ = 96,596”. Від [the Society of Critical Care Medicine](https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19) населення США було 328,200,000 у 2019. 96,596 з 328,200,000 = приблизно 1 з 3400. 
 
-Even if we *more than tripled* that capacity to 2%, here's what would've happened *if we did absolutely nothing:*
+Навіть якщо ми збільшимо місткість ПІТ *більше ніж у 3 рази* до 2%, ось, що би відбулося, якщо *ми не вживали ніяких заходів:*
 
 <div class="sim">
 		<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 </div>
 
-Not good.
+Виглядає не дуже добре.
 
-That's what [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/) found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected. 
-(remember: total cases *overshoots* herd immunity)
+Цього висновку дійшли [the March 16 Imperial College report](http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/): не вживаючи ніяких заходів, у нас переповнюються ПІТ і 80% населення будуть інфіковані.
+(пам'тай, загальна кількість випадків *перестрибує* колективний імунітет)
 
-Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... *IF we did nothing.*
+Навіть якщо лише 0.5% інфікованих помирають – оптимістичне припущення, коли не залишилось ПІТ, - у великій країні як США з населенням у 300 мільйонів 0.5% від 80% з 300 мільйонів =  1.2 мільйонів померлих... *ЯКЩО б ми бездіяли.*
 
-(Lots of news & social media reported "80% will be infected" *without* "IF WE DO NOTHING". Fear was channelled into clicks, not understanding. *Sigh.*)
+(Багато новин та соціальних мереж повідомляло, що "80% населення будуть інфікованими", *забуваючи додати* "ЯКЩО МИ НІЧОГО НЕ РОБИТИМЕМО". Весь страх було перенаправлено у кліки та лайки, а не обміркування ситуації. *Ох.*)
 
-###Scenario 1: Flatten The Curve / Herd Immunity
+###Сценарій 1: Вирівняти криву / Колективний імунітет
 
-The "Flatten The Curve" plan was touted by every public health organization, while the United Kingdom's original "herd immunity" plan was universally booed. They were *the same plan.* The UK just communicated theirs poorly.[^yong]
+План "Вирівняти криву" було прорекламовано кожною організацією з охорони здоров'я, в той час, як першопочатковий план "колективного імунітету" Великобританії викликав загальне несхвалення. То був *однаковий* план. Просто Великобританія не змогла комунікувати його правильно. [^yong]
 
-[^yong]: “He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”
+[^yong]: “Він каже, що справжня ціль така ж, як і ціль інших країн: вирівняти криву, рівномірно розподіляючи інфікування. У наслідок, нація може отримати колективний імунітет, це побочний ефект, а не самоціль. [...] Справжній план уряду, доступний онлайн, навіть не згадує про колективний імунітет.”
     
-    From a [The Atlantic article by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
+    З статті у [The Atlantic by Ed Yong](https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/)
 
-Both plans, though, had a literally fatal flaw.
+Втім обидва плани мають буквально фатальні недоліки. 
 
-First, let's look at the two main ways to "flatten the curve": handwashing & physical distancing.
+По-перше, давай поглянемо на два основні способи "вирівняння кривої": миття рук та фізичне дистанціювання.
 
-Increased handwashing cuts flus & colds in high-income countries by ~25%[^handwashing], while the city-wide lockdown in London cut close contacts by ~70%[^london]. So, let's assume handwashing can reduce R by *up to* 25%, and distancing can reduce R by *up to* 70%:
+Інтенсивніше миття рук зменшує розповсюдження грипу та застуди на ~25%[^handwashing] у заможних країнах, в той час, як повне закриття міста як Лондон зменшує кількість контактування між людьми на ~70%[^london]. Тож давай припустимо, що миття рук може зменшити R аж на 25%, а дистанціювання на 70%:
 
-[^handwashing]: “All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful.
+[^handwashing]: “Всі вісім повноцінних дослідженнь стверджують, що миття рук зменшує ризик ОРВІ від 6% до 44% [сумарне значення 24% (95% CI 6–40%)].” Ми округлили сумарне значення до 25% у симуляціях для спрощення.  [Rabie, T. and Curtis, V.](https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x) Примітка: згідно з цим аналізом, дослідження про миття рук (принаймні у заможних країнах) залишають бажати кращого. 
 
-[^london]: “We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
+[^london]: “Ми помітили зниження на 73% в середньому щоденної кількості контактів кожного учасника спостреження. Цього було би достатньо, щоб зменшити значення R0 з 2.6 перед закриттям до 0.62 (0.37 - 0.89) після закриття міста”. Ми округлили це число до 70% у симуляціях для спрощення. [Jarvis and Zandvoort et al](https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html)
 
-**Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:** (this calculator visualizes their *relative* effects, which is why increasing one *looks* like it decreases the effect of the others.[^log_caveat])
+**Пограй з цим калькулятором, щоб побачити, як % не-<icon s></icon>, миття рук та дистанціювання зменшують R:** (цей калькулятор візуалізує їх *відносні* наслідки, тому через це здається, що збільшення одного зменшує ефект інших.[^log_caveat])
 
-[^log_caveat]: This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain *logarithmic scales.*
+[^log_caveat]: Це спотворення зникло б, якщо би ми помістили R на логарифмічну шкалу...але тоді довелося би пояснювати *Логарифмічні шкали.*
 
 <div class="sim">
 		<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 </div>
 
-Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only *mild* physical distancing – so that R is lower, but still above 1:
+Тепер давай змоделюєм, що трапиться з епідемією COVID-19, якщо, починаючи з березня 2020, ми б збільшили миття рук, але ввели лише *помірне* фізичне дистанціювання – R знижується, але все ще більше 1:
 
 <div class="sim">
 		<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 </div>
 
-Three notes:
+Три примітки:
 
-1. This *reduces* total cases! **Even if you don't get R < 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.** Lots of folks think "Flatten The Curve" spreads out cases without reducing the total. This is impossible in *any* Epidemiology 101 model. But because the news reported "80%+ will be infected" as inevitable, folks thought total cases will be the same no matter what. *Sigh.*
+1. Це *зменшує* загальну кількість випадків! **Навіть якщо R < 1, зменшення R все одно зберігає життя, зменшуючи стрибок над колективним імунітетом.** Багато людей думають, що "вирівняння кривої" розподіляє кількість заражень у часі, але не зменшує загальну кількість випадків.Це неможливо у будь-якій моделі Епідеміології 101. Оскільки у новинах поширювався меседж, що не можливо уникнути інфікування 80%+ населення, люди зробили висновок, що неможливо повпливати на загальну кількість заражень. *Ох.*
 
-2. Due to the extra interventions, current cases peak *before* herd immunity is reached. In fact, in this simulation, total cases only overshoots *a tiny bit* above herd immunity – the UK's plan! At that point, R < 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...
+2. Через зовнішнє втручання та вжиття заходів, поточна кількість випадків досягає піку *перед* досягненням колективного імунітету. Насправді, у цій симуляції загальна кількість випадків зовсім *трохи* перестрибує рубіж колективного імунітету - план Великобританії! На тому етапі R < 1, можна зупинити будь-які втручання і COVID-19 залишиться під контролем! Що ж, лише з однією проблемою...
 
-3. You still run out of ICUs. For several months. (and remember, we *already* tripled ICUs for these simulations)
+3. Все одно закінчаться місця у палатах інтенсивної терапії. На декілька місяців (і не забувай, що ми вже збільшили місткість ПІТ у три рази для симуляцій) 
 
-That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at **mitigation** (reduce R, but R > 1) will fail. The only way out is **suppression** (reduce R so that R < 1).
+Це ще одне відкриття з доповіді Imperial College від 16 березня, яке переконало Великобританію покинути першопочатковий план. Будь-яка спроба **пом'якшення ефектів** (зменщення R, але R > 1) зазнає невдачі. Єдиний спосіб це **активна протидія** (зменшення R до R < 1).
 
 ![](pics/mitigation_vs_suppression.png)
 
-That is, don't merely "flatten" the curve, *crush* the curve. For example, with a...
+Тобто не достатньо просто "вирівняти" криву, потрібно *розчавити* криву. Наприклад, за допомогою...
 
-###Scenario 2: Months-Long Lockdown
+###Сценарій 2: Закриття міст/країн протягом місяців
 
-Let's see what happens if we *crush* the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – *finally* – return to normal life:
+Давай подивимося, що стається, коли ми *розчавлюємо* криву з 5 місяцями у закритому режимі, зменшенням <icon i></icon> практично до 0, і нарешті – *нарешті* – поверненням до нормального життя:
 
 <div class="sim">
 		<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 </div>
 
-Oh.
+Упс.
 
-This is the "second wave" everyone's talking about. As soon as we remove the lockdown, we get R > 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.
+Це та сама друга хвиля, про яку всі говорять. Як тільки ми виходимо з карантину, ми знову отримуємо R > 1. Тож декілька залишених <icon i></icon> (або приїжджих <icon i></icon>) можуть спричинити стрибок заражень рівномірно поганий тому, який би ми отримали у Сценарії 0: Ніяк не діяти.
 
-**A lockdown isn't a cure, it's just a restart.**
+**Закриття міст не рецепт успіху, а лише можливість для перезавантаження.**
 
-So, what, do we just lockdown again & again?
+Тож що, ми маємо закривати міста знову і знову? 
 
-###Scenario 3: Intermittent Lockdown
+###Сценарій 3: Періодичні закриття міст 
 
-This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.[^lockdown_harvard]
+Це рішення було вперше запропоноване у доповіді Imperial College від 16 березня і пізніше у статті з Harvard.[^lockdown_harvard]
 
-[^lockdown_harvard]: “Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
+[^lockdown_harvard]: За відсутності інших заходів, ключова метрика успіху соціального дисціонування це заповненість палат інтенсивної терапії. Щоб запобігти цьому, може виникнути потреба продовжити соціальне дистанціювання або застосовувати його періодично до 2022 року.” [Kissler and Tedijanto et al](https://science.sciencemag.org/content/early/2020/04/14/science.abb5793)
 
-**Here's a simulation:** (After playing the "recorded scenario", you can try simulating your *own* lockdown schedule, by changing the sliders *while* the simulation is running! Remember you can pause & continue the sim, and change the simulation speed)
+**Ось симуляція:** (Після того, як програєш запрограмовний сценарій, спробуй змоделювати *свій* графік карантинів, змінюючи повзунки *під час* програвання симуляції! Пам'ятай, що ти можеш зупинити і відновити гру та змінити її швидкість.)
 
 <div class="sim">
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
