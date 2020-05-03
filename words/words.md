@@ -150,100 +150,100 @@
 		<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 </div>
 
-Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and *when* current cases peak... but the *height* of that peak, and total cases in the end, stays the same.
+Не багато змінюється! Як довго ти залишаєшся <icon e></icon> Інфікованим, змінює співвідношення <icon e></icon>-до-<icon i></icon> і *коли* поточна кількість випадків досягає піку... але *висота* піку і загальна кількість випадків залишається тою ж.
 
-Why's that? Because of the *first*-most important idea in Epidemiology 101:
+Чому так? Тому що *перша*-найважливіша ідея Епідеміології 101:
 
 ![](pics/r.png)
 
-Short for "Reproduction number". It's the *average* number of people an <icon i></icon> infects *before* they recover (or die).
+Скорочено від "Репродукції" (Reproduction). Це *середня* кількість людей, яку інфікує <icon i></icon> *перед* одужанням (або смертю).
 
 ![](pics/r2.png)
 
-**R** changes over the course of an outbreak, as we get more immunity & interventions.
+**R** змінюється протягом епідемії з виробленням імунітету та коли вживаються спеціальні заходи.
 
-**R<sub>0</sub>** (pronounced R-nought) is what R is *at the start of an outbreak, before immunity or interventions*. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.
+**R<sub>0</sub>** це те, якою була R *напочатку епідемії, перед виробленням імунітету та вжиттям заходів*. R<sub>0</sub> більш точно відображає потужність самого вірусу, але все одно може різнитися.  Наприклад, R<sub>0</sub> вище у густонаселених містах, ніж у сільській місцевості.
 
-(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)
+(Більшість новинних статей – навіть деякі наукові дослідження! – плутають R та R<sub>0</sub>. Так, наукова термінологія погана.)
 
-The R<sub>0</sub> for "the" seasonal flu is around 1.28[^r0_flu]. This means, at the *start* of a flu outbreak, each <icon i></icon> infects 1.28 others *on average.* (If it sounds weird that this isn't a whole number, remember that the "average" mom has 2.4 children. This doesn't mean there's half-children running about.)
+R<sub>0</sub> для сезонних ОРВІ приблизно 1.28[^r0_flu]. Це означає, що *на початку* спалаху грипу, кожен <icon i></icon> інфікує 1.28 людей *в середньому.* (Якщо це не ціле число здається дивним, пам'ятай, що в середньому жінки народжують 2.4 дитини. Це не значить, що десь світом бігають половинки дітей.)
 
-[^r0_flu]: “The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
+[^r0_flu]: “Медіанне значення R для сезонного грипу було 1.28 (IQR: 1.19–1.37)” [Biggerstaff, M., Cauchemez, S., Reed, C. et al.](https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480)
 
-The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,[^r0_covid] though one *not-yet-finalized* study estimates it was 5.7(!) in Wuhan.[^r0_wuhan]
+Згідно з оцінками, R<sub>0</sub> для COVID-19 складає 2.2,[^r0_covid] втім одне ще не закінчене дослідження вказує, що R було 5.7(!) у Вухані.[^r0_wuhan]
 
-[^r0_covid]: “We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
+[^r0_covid]: “За нашими оцінками, R0 2019-nCoV приблизно дорівнює 2.2 (90% інтервалу найбільшої густини: 1.4–3.8)” [Riou J, Althaus CL.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/)
 
-[^r0_wuhan]: “we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
+[^r0_wuhan]: “Ми підрахували медіанне значення R0 дорівнює 5.7 (95% CI 3.8–8.9)” [Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.](https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article)
 
-In our simulations – *at the start & on average* – an <icon i></icon> infects someone every 4 days, over 10 days. "4 days" goes into "10 days" two-and-a-half times. This means – *at the start & on average* – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:[^r0_caveats_sim])
+У наших симуляціях – *на початку та в середньому* – <icon i></icon> інфікує когось кожні 4 дні протягом 10 днів. "4 дні" потрапляють у проміжок "10 днів" 2.5 рази. Це означає - *на початку й в середньому* – кожен <icon i></icon> інфікує 2.5 людини. Отже, R<sub>0</sub> = 2.5. (обмовки:[^r0_caveats_sim])
 
-[^r0_caveats_sim]: This is pretending that you're equally infectious all throughout your "infectious period". Again, simplifications for educational purposes.
+[^r0_caveats_sim]: Це лише враховуючи, що ти однаково розповсюджуєш інфекцію протягом усього періоду, коли ти можеш заражати інших. Знову ж таки, це спрощення для освітніх цілей. 
 
-**Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time & new-infection time:**
+**Пограй з цим R<sub>0</sub> калькулятором, щоб побачити, як R<sub>0</sub> залежить від часу одужання та швидкості нових заражень:**
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 </div>
 
-But remember, the fewer <icon s></icon>s there are, the *slower* <icon s></icon>s become <icon i></icon>s. The *current* reproduction number (R) depends not just on the *basic* reproduction number (R<sub>0</sub>), but *also* on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering & getting natural immunity.)
+Але пам'тай: чим менше <icon s></icon>, тим *повільніше* <icon s></icon> стають <icon i></icon>. Поточне число відтворення (R) залежить не лише від *базового* репродуктивного числа (R<sub>0</sub>), але *також* від того, скільки людей вже більше не <icon s></icon> Сприйнятливі. (Напприклад, після одужання та набуття природного імунітету.)
 
 <div class="sim">
 		<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 </div>
 
-When enough people have immunity, R < 1, and the virus is contained! This is called **herd immunity**. For flus, herd immunity is achieved *with a vaccine*. Trying to achieve "natural herd immunity" by letting folks get infected is a *terrible* idea. (But not for the reason you may think! We'll explain later.)
+Коли достатня кількість людей має імунітет, R < 1, епідемія під контролем! Це називається **колективним імунітетом**. Для грипів, колективний імунітет досягається за допомогою *вакцинації*. Намагатися досягти "природнього колективного імунітету", дозволячи масове інфікування, *жахлива* ідея. (Але не з тої причини, яка одразу спала на думку! Ми пояснимо це пізніше.)
 
-Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:
+Давай  ще раз запустимо SEIR модель, але демонструючи R<sub>0</sub>, R з плином часу та з рубіжем колективного імунітету:
 
 <div class="sim">
 		<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 </div>
 
-**NOTE: Total cases *does not stop* at herd immunity, but overshoots it!** And it crosses the threshold *exactly* when current cases peak. (This happens no matter how you change the settings – try it for yourself!)
+**Примітка: Загальна кількість випадків *не припиняє рости* після досягнення колективного імунітету, а перескакує його!** І вона перетинає рубіж *у той же час*, як кількість поточних випадків досягає піку. (Це відбувається незалежно від того, як ти зміниш налаштування, - спробуй сам(а)!)
 
-This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R < 1. And when R < 1, new cases stop growing: a peak.
+Це відбувається тому, що коли є більше не-<icon s></icon>, ніж рубіж колективного імунітету, то отримуєш R < 1. І коли R < 1, число нових випадків перестає зростати - тобто досягає піку.
 
-**If there's only one lesson you take away from this guide, here it is** – it's an extremely complex diagram so please take time to fully absorb it:
+**Якщо ти можеш взяти лише один урок з цього гайду, ось він** – це надзвичайно складна діаграма, тому, будь ласка, дай собі часу, щоб повністю її зрозуміти:
 
 ![](pics/r3.png)
 
-**This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!**
+**Це значить: нам НЕ потрібно відстежити усі інфікування або майже усі інфікування, щоб зупинити COVID-19!**
 
-It's a paradox. COVID-19 is extremely contagious, yet to contain it, we "only" need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R < 1, virus is contained! (exact formula:[^exact_formula])
+Це парадокс. COVID-19 надзвичайно заразний, але щоб стримати його, нам необхідно зупинити "лише" понад 60% захворювань.60%?! Якщо б це була оцінка в університеті, то лише E (задовільнення мінімальних критеріїв.) Але якщо R<sub>0</sub> = 2.5, зменшення його на 61% дає нам R = 0.975, тобто R < 1 і вірус приборкано! (точна формула:[^exact_formula])
 
-[^exact_formula]: Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions *stopped*.
+[^exact_formula]: Пам'ятай R = R<sub>0</sub> * кількість дозволених заражень. Пам'ятай також, що кількість дозволених заражень = 1 - кількість заражень, які були недопущені.
     
-    Therefore, to get R < 1, you need to get R<sub>0</sub> * TransmissionsAllowed < 1. 
+    Отже, щоб отримати R < 1, потрібно отримати R<sub>0</sub> * Кількість дозволених заражень < 1. 
     
-    Therefore, TransmissionsAllowed < 1/R<sub>0</sub>
+    Отже, Кількість дозволених заражень < 1/R<sub>0</sub>
     
-    Therefore, 1 - TransmissionsStopped < 1/R<sub>0</sub>
+    Отже, 1 - Кількість недопущених заражень < 1/R<sub>0</sub>
     
-    Therefore, TransmissionsStopped > 1 - 1/R<sub>0</sub>
+    Отже, Кількість недопущених заражень > 1 - 1/R<sub>0</sub>
     
-    Therefore, you need to stop more than **1 - 1/R<sub>0</sub>** of transmissions to get R < 1 and contain the virus!
+    Отже, потрібно зупинити більше, ніж **1 - 1/R<sub>0</sub>** заражень, щоб отримати R < 1 і приборкати вірус!
 
 ![](pics/r4.png)
 
-(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a "Sandbox Mode" at the end of this guide, where you can plug in your *own* numbers, and simulate what happens.)
+(Якщо ти думаєш, що R<sub>0</sub> або інші числа у нашій симуляції завеликі чи замалі, добре, що ти ставиш під сумнів наші припущення! У кінці гайду ти знайдеш "Режим Пісочниці", де ти зможеш задати свої числа й побачити, що вийде.)
 
-*Every* COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing & quarantining, face masks, even "herd immunity" – they're *all* doing the same thing:
+*Кожний* захід для запобігання COVID-19, який ти коли-небудь чув(ла) – миття рук, соціальне дистанціювання, закриття країн, самоізоляція, відстеження контактів та карантини, маски, навіть колективний імунітет - усі вони роблять одне й те ж:
 
-Getting R < 1.
+Знижують R до R < 1.
 
-So now, let's use our "epidemic flight simulator" to figure this out: How can we get R < 1 in a way **that also protects our mental health *and* financial health?**
+Тож зараз давай скористаємося нашим "епідеміологічним симулятором польотів", щоб з'ясувати, як ми можемо досягти R < 1 у спосіб, який **який також захищає наше психологічне *та* фінансове благополуччя?**
 
-Brace yourselves for an emergency landing...
+Приготуйся до аварійної посадки...
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Months</div>
+        <div>Наступні декілька місяців</div>
     </div>
 </div>
 
-...could have been worse. Here's a parallel universe we avoided:
+...могли би бути ще гіршими. Ось паралельна реальність, якої ми уникли:
 
 ###Scenario 0: Do Absolutely Nothing
 
