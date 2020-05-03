@@ -63,6 +63,7 @@
 
 <article>
 
+	
 	<div class="section">
 		<div>
 			<iframe id="splash" width="960" height="480" src="banners/splash.html"></iframe>
@@ -153,100 +154,100 @@
 	<div class="sim">
 			<iframe src="sim?stage=epi-5" width="800" height="540"></iframe>
 	</div>
-	<p>Not much changes! How long you stay <icon e></icon> Exposed changes the ratio of <icon e></icon>-to-<icon i></icon>, and <em>when</em> current cases peak... but the <em>height</em> of that peak, and total cases in the end, stays the same.</p>
-	<p>Why's that? Because of the <em>first</em>-most important idea in Epidemiology 101:</p>
+	<p>Не багато змінюється! Як довго ти залишаєшся <icon e></icon> Інфікованим, змінює співвідношення <icon e></icon>-до-<icon i></icon> і <em>коли</em> поточна кількість випадків досягає піку... але <em>висота</em> піку і загальна кількість випадків залишається тою ж.</p>
+	<p>Чому так? Тому що <em>перша</em>-найважливіша ідея Епідеміології 101:</p>
 	<p><img src="pics/r.png" alt=""></p>
-	<p>Short for &quot;Reproduction number&quot;. It's the <em>average</em> number of people an <icon i></icon> infects <em>before</em> they recover (or die).</p>
+	<p>Скорочено від &quot;Репродукції&quot; (Reproduction). Це <em>середня</em> кількість людей, яку інфікує <icon i></icon> <em>перед</em> одужанням (або смертю).</p>
 	<p><img src="pics/r2.png" alt=""></p>
-	<p><strong>R</strong> changes over the course of an outbreak, as we get more immunity &amp; interventions.</p>
-	<p><strong>R<sub>0</sub></strong> (pronounced R-nought) is what R is <em>at the start of an outbreak, before immunity or interventions</em>. R<sub>0</sub> more closely reflects the power of the virus itself, but it still changes from place to place. For example, R<sub>0</sub> is higher in dense cities than sparse rural areas.</p>
-	<p>(Most news articles – and even some research papers! – confuse R and R<sub>0</sub>. Again, science terminology is bad)</p>
-	<p>The R<sub>0</sub> for &quot;the&quot; seasonal flu is around 1.28<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>. This means, at the <em>start</em> of a flu outbreak, each <icon i></icon> infects 1.28 others <em>on average.</em> (If it sounds weird that this isn't a whole number, remember that the &quot;average&quot; mom has 2.4 children. This doesn't mean there's half-children running about.)</p>
-	<p>The R<sub>0</sub> for COVID-19 is estimated to be around 2.2,<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup> though one <em>not-yet-finalized</em> study estimates it was 5.7(!) in Wuhan.<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup></p>
-	<p>In our simulations – <em>at the start &amp; on average</em> – an <icon i></icon> infects someone every 4 days, over 10 days. &quot;4 days&quot; goes into &quot;10 days&quot; two-and-a-half times. This means – <em>at the start &amp; on average</em> – each <icon i></icon> infects 2.5 others. Therefore, R<sub>0</sub> = 2.5. (caveats:<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>)</p>
-	<p><strong>Play with this R<sub>0</sub> calculator, to see how R<sub>0</sub> depends on recovery time &amp; new-infection time:</strong></p>
+	<p><strong>R</strong> змінюється протягом епідемії з виробленням імунітету та коли вживаються спеціальні заходи.</p>
+	<p><strong>R<sub>0</sub></strong> це те, якою була R <em>напочатку епідемії, перед виробленням імунітету та вжиттям заходів</em>. R<sub>0</sub> більш точно відображає потужність самого вірусу, але все одно може різнитися.  Наприклад, R<sub>0</sub> вище у густонаселених містах, ніж у сільській місцевості.</p>
+	<p>(Більшість новинних статей – навіть деякі наукові дослідження! – плутають R та R<sub>0</sub>. Так, наукова термінологія погана.)</p>
+	<p>R<sub>0</sub> для сезонних ОРВІ приблизно 1.28<sup class="footnote-ref"><a href="#fn8" id="fnref8">[8]</a></sup>. Це означає, що <em>на початку</em> спалаху грипу, кожен <icon i></icon> інфікує 1.28 людей <em>в середньому.</em> (Якщо це не ціле число здається дивним, пам'ятай, що в середньому жінки народжують 2.4 дитини. Це не значить, що десь світом бігають половинки дітей.)</p>
+	<p>Згідно з оцінками, R<sub>0</sub> для COVID-19 складає 2.2,<sup class="footnote-ref"><a href="#fn9" id="fnref9">[9]</a></sup> втім одне ще не закінчене дослідження вказує, що R було 5.7(!) у Вухані.<sup class="footnote-ref"><a href="#fn10" id="fnref10">[10]</a></sup></p>
+	<p>У наших симуляціях – <em>на початку та в середньому</em> – <icon i></icon> інфікує когось кожні 4 дні протягом 10 днів. &quot;4 дні&quot; потрапляють у проміжок &quot;10 днів&quot; 2.5 рази. Це означає - <em>на початку й в середньому</em> – кожен <icon i></icon> інфікує 2.5 людини. Отже, R<sub>0</sub> = 2.5. (обмовки:<sup class="footnote-ref"><a href="#fn11" id="fnref11">[11]</a></sup>)</p>
+	<p><strong>Пограй з цим R<sub>0</sub> калькулятором, щоб побачити, як R<sub>0</sub> залежить від часу одужання та швидкості нових заражень:</strong></p>
 	<div class="sim">
 			<iframe src="sim?stage=epi-6a&format=calc" width="285" height="255"></iframe>
 	</div>
-	<p>But remember, the fewer <icon s></icon>s there are, the <em>slower</em> <icon s></icon>s become <icon i></icon>s. The <em>current</em> reproduction number (R) depends not just on the <em>basic</em> reproduction number (R<sub>0</sub>), but <em>also</em> on how many people are no longer <icon s></icon> Susceptible. (For example, by recovering &amp; getting natural immunity.)</p>
+	<p>Але пам'тай: чим менше <icon s></icon>, тим <em>повільніше</em> <icon s></icon> стають <icon i></icon>. Поточне число відтворення (R) залежить не лише від <em>базового</em> репродуктивного числа (R<sub>0</sub>), але <em>також</em> від того, скільки людей вже більше не <icon s></icon> Сприйнятливі. (Напприклад, після одужання та набуття природного імунітету.)</p>
 	<div class="sim">
 			<iframe src="sim?stage=epi-6b&format=calc" width="285" height="390"></iframe>
 	</div>
-	<p>When enough people have immunity, R &lt; 1, and the virus is contained! This is called <strong>herd immunity</strong>. For flus, herd immunity is achieved <em>with a vaccine</em>. Trying to achieve &quot;natural herd immunity&quot; by letting folks get infected is a <em>terrible</em> idea. (But not for the reason you may think! We'll explain later.)</p>
-	<p>Now, let's play the SEIR Model again, but showing R<sub>0</sub>, R over time, and the herd immunity threshold:</p>
+	<p>Коли достатня кількість людей має імунітет, R &lt; 1, епідемія під контролем! Це називається <strong>колективним імунітетом</strong>. Для грипів, колективний імунітет досягається за допомогою <em>вакцинації</em>. Намагатися досягти &quot;природнього колективного імунітету&quot;, дозволячи масове інфікування, <em>жахлива</em> ідея. (Але не з тої причини, яка одразу спала на думку! Ми пояснимо це пізніше.)</p>
+	<p>Давай  ще раз запустимо SEIR модель, але демонструючи R<sub>0</sub>, R з плином часу та з рубіжем колективного імунітету:</p>
 	<div class="sim">
 			<iframe src="sim?stage=epi-7" width="800" height="540"></iframe>
 	</div>
-	<p><strong>NOTE: Total cases <em>does not stop</em> at herd immunity, but overshoots it!</strong> And it crosses the threshold <em>exactly</em> when current cases peak. (This happens no matter how you change the settings – try it for yourself!)</p>
-	<p>This is because when there are more non-<icon s></icon>s than the herd immunity threshold, you get R &lt; 1. And when R &lt; 1, new cases stop growing: a peak.</p>
-	<p><strong>If there's only one lesson you take away from this guide, here it is</strong> – it's an extremely complex diagram so please take time to fully absorb it:</p>
+	<p><strong>Примітка: Загальна кількість випадків <em>не припиняє рости</em> після досягнення колективного імунітету, а перескакує його!</strong> І вона перетинає рубіж <em>у той же час</em>, як кількість поточних випадків досягає піку. (Це відбувається незалежно від того, як ти зміниш налаштування, - спробуй сам(а)!)</p>
+	<p>Це відбувається тому, що коли є більше не-<icon s></icon>, ніж рубіж колективного імунітету, то отримуєш R &lt; 1. І коли R &lt; 1, число нових випадків перестає зростати - тобто досягає піку.</p>
+	<p><strong>Якщо ти можеш взяти лише один урок з цього гайду, ось він</strong> – це надзвичайно складна діаграма, тому, будь ласка, дай собі часу, щоб повністю її зрозуміти:</p>
 	<p><img src="pics/r3.png" alt=""></p>
-	<p><strong>This means: we do NOT need to catch all transmissions, or even nearly all transmissions, to stop COVID-19!</strong></p>
-	<p>It's a paradox. COVID-19 is extremely contagious, yet to contain it, we &quot;only&quot; need to stop more than 60% of infections. 60%?! If that was a school grade, that's a D-. But if R<sub>0</sub> = 2.5, cutting that by 61% gives us R = 0.975, which is R &lt; 1, virus is contained! (exact formula:<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup>)</p>
+	<p><strong>Це значить: нам НЕ потрібно відстежити усі інфікування або майже усі інфікування, щоб зупинити COVID-19!</strong></p>
+	<p>Це парадокс. COVID-19 надзвичайно заразний, але щоб стримати його, нам необхідно зупинити &quot;лише&quot; понад 60% захворювань.60%?! Якщо б це була оцінка в університеті, то лише E (задовільнення мінімальних критеріїв.) Але якщо R<sub>0</sub> = 2.5, зменшення його на 61% дає нам R = 0.975, тобто R &lt; 1 і вірус приборкано! (точна формула:<sup class="footnote-ref"><a href="#fn12" id="fnref12">[12]</a></sup>)</p>
 	<p><img src="pics/r4.png" alt=""></p>
-	<p>(If you think R<sub>0</sub> or the other numbers in our simulations are too low/high, that's good you're challenging our assumptions! There'll be a &quot;Sandbox Mode&quot; at the end of this guide, where you can plug in your <em>own</em> numbers, and simulate what happens.)</p>
-	<p><em>Every</em> COVID-19 intervention you've heard of – handwashing, social/physical distancing, lockdowns, self-isolation, contact tracing &amp; quarantining, face masks, even &quot;herd immunity&quot; – they're <em>all</em> doing the same thing:</p>
-	<p>Getting R &lt; 1.</p>
-	<p>So now, let's use our &quot;epidemic flight simulator&quot; to figure this out: How can we get R &lt; 1 in a way <strong>that also protects our mental health <em>and</em> financial health?</strong></p>
-	<p>Brace yourselves for an emergency landing...</p>
+	<p>(Якщо ти думаєш, що R<sub>0</sub> або інші числа у нашій симуляції завеликі чи замалі, добре, що ти ставиш під сумнів наші припущення! У кінці гайду ти знайдеш &quot;Режим Пісочниці&quot;, де ти зможеш задати свої числа й побачити, що вийде.)</p>
+	<p><em>Кожний</em> захід для запобігання COVID-19, який ти коли-небудь чув(ла) – миття рук, соціальне дистанціювання, закриття країн, самоізоляція, відстеження контактів та карантини, маски, навіть колективний імунітет - усі вони роблять одне й те ж:</p>
+	<p>Знижують R до R &lt; 1.</p>
+	<p>Тож зараз давай скористаємося нашим &quot;епідеміологічним симулятором польотів&quot;, щоб з'ясувати, як ми можемо досягти R &lt; 1 у спосіб, який <strong>який також захищає наше психологічне <em>та</em> фінансове благополуччя?</strong></p>
+	<p>Приготуйся до аварійної посадки...</p>
 	<div class="section chapter">
 		<div>
 			<img src="banners/curve.png" height=480 style="position: absolute;"/>
-			<div>The Next Few Months</div>
+			<div>Наступні декілька місяців</div>
 		</div>
 	</div>
-	<p>...could have been worse. Here's a parallel universe we avoided:</p>
-	<p>###Scenario 0: Do Absolutely Nothing</p>
-	<p>Around 1 in 20 people infected with COVID-19 need to go to an ICU (Intensive Care Unit).<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup> In a rich country like the USA, there's 1 ICU bed per 3400 people.<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup> Therefore, the USA can handle 20 out of 3400 people being <em>simultaneously</em> infected – or, 0.6% of the population.</p>
-	<p>Even if we <em>more than tripled</em> that capacity to 2%, here's what would've happened <em>if we did absolutely nothing:</em></p>
+	<p>...могли би бути ще гіршими. Ось паралельна реальність, якої ми уникли:</p>
+	<p>###Сценарій 0: Ніяк не діяти</p>
+	<p>Приблизно 1 з 20 хворих на COVID-19 потребує палату інтенсивної терапії (ПІТ).<sup class="footnote-ref"><a href="#fn13" id="fnref13">[13]</a></sup> У багатій країні як США, існує 1 ліжко у такій палаті на кожні 3400 людей.<sup class="footnote-ref"><a href="#fn14" id="fnref14">[14]</a></sup> Тож США може дозволити 20 з 3400 <em>одночасно</em> інфікованих людей - або ж 0.6% населення.</p>
+	<p>Навіть якщо ми збільшимо місткість ПІТ <em>більше ніж у 3 рази</em> до 2%, ось, що би відбулося, якщо <em>ми не вживали ніяких заходів:</em></p>
 	<div class="sim">
 			<iframe src="sim?stage=int-1&format=lines" width="800" height="540"></iframe>
 	</div>
-	<p>Not good.</p>
-	<p>That's what <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a> found: do nothing, and we run out of ICUs, with more than 80% of the population getting infected.
-	(remember: total cases <em>overshoots</em> herd immunity)</p>
-	<p>Even if only 0.5% of infected die – a generous assumption when there's no more ICUs – in a large country like the US, with 300 million people, 0.5% of 80% of 300 million = still 1.2 million dead... <em>IF we did nothing.</em></p>
-	<p>(Lots of news &amp; social media reported &quot;80% will be infected&quot; <em>without</em> &quot;IF WE DO NOTHING&quot;. Fear was channelled into clicks, not understanding. <em>Sigh.</em>)</p>
-	<p>###Scenario 1: Flatten The Curve / Herd Immunity</p>
-	<p>The &quot;Flatten The Curve&quot; plan was touted by every public health organization, while the United Kingdom's original &quot;herd immunity&quot; plan was universally booed. They were <em>the same plan.</em> The UK just communicated theirs poorly.<sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup></p>
-	<p>Both plans, though, had a literally fatal flaw.</p>
-	<p>First, let's look at the two main ways to &quot;flatten the curve&quot;: handwashing &amp; physical distancing.</p>
-	<p>Increased handwashing cuts flus &amp; colds in high-income countries by ~25%<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup>, while the city-wide lockdown in London cut close contacts by ~70%<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup>. So, let's assume handwashing can reduce R by <em>up to</em> 25%, and distancing can reduce R by <em>up to</em> 70%:</p>
-	<p><strong>Play with this calculator to see how % of non-<icon s></icon>, handwashing, and distancing reduce R:</strong> (this calculator visualizes their <em>relative</em> effects, which is why increasing one <em>looks</em> like it decreases the effect of the others.<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup>)</p>
+	<p>Виглядає не дуже добре.</p>
+	<p>Цього висновку дійшли <a href="http://www.imperial.ac.uk/mrc-global-infectious-disease-analysis/covid-19/report-9-impact-of-npis-on-covid-19/">the March 16 Imperial College report</a>: не вживаючи ніяких заходів, у нас переповнюються ПІТ і 80% населення будуть інфіковані.
+	(пам'тай, загальна кількість випадків <em>перестрибує</em> колективний імунітет)</p>
+	<p>Навіть якщо лише 0.5% інфікованих помирають – оптимістичне припущення, коли не залишилось ПІТ, - у великій країні як США з населенням у 300 мільйонів 0.5% від 80% з 300 мільйонів =  1.2 мільйонів померлих... <em>ЯКЩО б ми бездіяли.</em></p>
+	<p>(Багато новин та соціальних мереж повідомляло, що &quot;80% населення будуть інфікованими&quot;, <em>забуваючи додати</em> &quot;ЯКЩО МИ НІЧОГО НЕ РОБИТИМЕМО&quot;. Весь страх було перенаправлено у кліки та лайки, а не обміркування ситуації. <em>Ох.</em>)</p>
+	<p>###Сценарій 1: Вирівняти криву / Колективний імунітет</p>
+	<p>План &quot;Вирівняти криву&quot; було прорекламовано кожною організацією з охорони здоров'я, в той час, як першопочатковий план &quot;колективного імунітету&quot; Великобританії викликав загальне несхвалення. То був <em>однаковий</em> план. Просто Великобританія не змогла комунікувати його правильно. <sup class="footnote-ref"><a href="#fn15" id="fnref15">[15]</a></sup></p>
+	<p>Втім обидва плани мають буквально фатальні недоліки.</p>
+	<p>По-перше, давай поглянемо на два основні способи &quot;вирівняння кривої&quot;: миття рук та фізичне дистанціювання.</p>
+	<p>Інтенсивніше миття рук зменшує розповсюдження грипу та застуди на ~25%<sup class="footnote-ref"><a href="#fn16" id="fnref16">[16]</a></sup> у заможних країнах, в той час, як повне закриття міста як Лондон зменшує кількість контактування між людьми на ~70%<sup class="footnote-ref"><a href="#fn17" id="fnref17">[17]</a></sup>. Тож давай припустимо, що миття рук може зменшити R аж на 25%, а дистанціювання на 70%:</p>
+	<p><strong>Пограй з цим калькулятором, щоб побачити, як % не-<icon s></icon>, миття рук та дистанціювання зменшують R:</strong> (цей калькулятор візуалізує їх <em>відносні</em> наслідки, тому через це здається, що збільшення одного зменшує ефект інших.<sup class="footnote-ref"><a href="#fn18" id="fnref18">[18]</a></sup>)</p>
 	<div class="sim">
 			<iframe src="sim?stage=int-2a&format=calc" width="285" height="260"></iframe>
 	</div>
-	<p>Now, let's simulate what happens to a COVID-19 epidemic if, starting March 2020, we had increased handwashing but only <em>mild</em> physical distancing – so that R is lower, but still above 1:</p>
+	<p>Тепер давай змоделюєм, що трапиться з епідемією COVID-19, якщо, починаючи з березня 2020, ми б збільшили миття рук, але ввели лише <em>помірне</em> фізичне дистанціювання – R знижується, але все ще більше 1:</p>
 	<div class="sim">
 			<iframe src="sim?stage=int-2&format=lines" width="800" height="540"></iframe>
 	</div>
-	<p>Three notes:</p>
+	<p>Три примітки:</p>
 	<ol>
 	<li>
-	<p>This <em>reduces</em> total cases! <strong>Even if you don't get R &lt; 1, reducing R still saves lives, by reducing the 'overshoot' above herd immunity.</strong> Lots of folks think &quot;Flatten The Curve&quot; spreads out cases without reducing the total. This is impossible in <em>any</em> Epidemiology 101 model. But because the news reported &quot;80%+ will be infected&quot; as inevitable, folks thought total cases will be the same no matter what. <em>Sigh.</em></p>
+	<p>Це <em>зменшує</em> загальну кількість випадків! <strong>Навіть якщо R &lt; 1, зменшення R все одно зберігає життя, зменшуючи стрибок над колективним імунітетом.</strong> Багато людей думають, що &quot;вирівняння кривої&quot; розподіляє кількість заражень у часі, але не зменшує загальну кількість випадків.Це неможливо у будь-якій моделі Епідеміології 101. Оскільки у новинах поширювався меседж, що не можливо уникнути інфікування 80%+ населення, люди зробили висновок, що неможливо повпливати на загальну кількість заражень. <em>Ох.</em></p>
 	</li>
 	<li>
-	<p>Due to the extra interventions, current cases peak <em>before</em> herd immunity is reached. In fact, in this simulation, total cases only overshoots <em>a tiny bit</em> above herd immunity – the UK's plan! At that point, R &lt; 1, you can let go of all other interventions, and COVID-19 stays contained! Well, except for one problem...</p>
+	<p>Через зовнішнє втручання та вжиття заходів, поточна кількість випадків досягає піку <em>перед</em> досягненням колективного імунітету. Насправді, у цій симуляції загальна кількість випадків зовсім <em>трохи</em> перестрибує рубіж колективного імунітету - план Великобританії! На тому етапі R &lt; 1, можна зупинити будь-які втручання і COVID-19 залишиться під контролем! Що ж, лише з однією проблемою...</p>
 	</li>
 	<li>
-	<p>You still run out of ICUs. For several months. (and remember, we <em>already</em> tripled ICUs for these simulations)</p>
+	<p>Все одно закінчаться місця у палатах інтенсивної терапії. На декілька місяців (і не забувай, що ми вже збільшили місткість ПІТ у три рази для симуляцій)</p>
 	</li>
 	</ol>
-	<p>That was the other finding of the March 16 Imperial College report, which convinced the UK to abandon its original plan. Any attempt at <strong>mitigation</strong> (reduce R, but R &gt; 1) will fail. The only way out is <strong>suppression</strong> (reduce R so that R &lt; 1).</p>
+	<p>Це ще одне відкриття з доповіді Imperial College від 16 березня, яке переконало Великобританію покинути першопочатковий план. Будь-яка спроба <strong>пом'якшення ефектів</strong> (зменщення R, але R &gt; 1) зазнає невдачі. Єдиний спосіб це <strong>активна протидія</strong> (зменшення R до R &lt; 1).</p>
 	<p><img src="pics/mitigation_vs_suppression.png" alt=""></p>
-	<p>That is, don't merely &quot;flatten&quot; the curve, <em>crush</em> the curve. For example, with a...</p>
-	<p>###Scenario 2: Months-Long Lockdown</p>
-	<p>Let's see what happens if we <em>crush</em> the curve with a 5-month lockdown, reduce <icon i></icon> to nearly nothing, then finally – <em>finally</em> – return to normal life:</p>
+	<p>Тобто не достатньо просто &quot;вирівняти&quot; криву, потрібно <em>розчавити</em> криву. Наприклад, за допомогою...</p>
+	<p>###Сценарій 2: Закриття міст/країн протягом місяців</p>
+	<p>Давай подивимося, що стається, коли ми <em>розчавлюємо</em> криву з 5 місяцями у закритому режимі, зменшенням <icon i></icon> практично до 0, і нарешті – <em>нарешті</em> – поверненням до нормального життя:</p>
 	<div class="sim">
 			<iframe src="sim?stage=int-3&format=lines" width="800" height="540"></iframe>
 	</div>
-	<p>Oh.</p>
-	<p>This is the &quot;second wave&quot; everyone's talking about. As soon as we remove the lockdown, we get R &gt; 1 again. So, a single leftover <icon i></icon> (or imported <icon i></icon>) can cause a spike in cases that's almost as bad as if we'd done Scenario 0: Absolutely Nothing.</p>
-	<p><strong>A lockdown isn't a cure, it's just a restart.</strong></p>
-	<p>So, what, do we just lockdown again &amp; again?</p>
-	<p>###Scenario 3: Intermittent Lockdown</p>
-	<p>This solution was first suggested by the March 16 Imperial College report, and later again by a Harvard paper.<sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup></p>
-	<p><strong>Here's a simulation:</strong> (After playing the &quot;recorded scenario&quot;, you can try simulating your <em>own</em> lockdown schedule, by changing the sliders <em>while</em> the simulation is running! Remember you can pause &amp; continue the sim, and change the simulation speed)</p>
+	<p>Упс.</p>
+	<p>Це та сама друга хвиля, про яку всі говорять. Як тільки ми виходимо з карантину, ми знову отримуємо R &gt; 1. Тож декілька залишених <icon i></icon> (або приїжджих <icon i></icon>) можуть спричинити стрибок заражень рівномірно поганий тому, який би ми отримали у Сценарії 0: Ніяк не діяти.</p>
+	<p><strong>Закриття міст не рецепт успіху, а лише можливість для перезавантаження.</strong></p>
+	<p>Тож що, ми маємо закривати міста знову і знову?</p>
+	<p>###Сценарій 3: Періодичні закриття міст</p>
+	<p>Це рішення було вперше запропоноване у доповіді Imperial College від 16 березня і пізніше у статті з Harvard.<sup class="footnote-ref"><a href="#fn19" id="fnref19">[19]</a></sup></p>
+	<p><strong>Ось симуляція:</strong> (Після того, як програєш запрограмовний сценарій, спробуй змоделювати <em>свій</em> графік карантинів, змінюючи повзунки <em>під час</em> програвання симуляції! Пам'ятай, що ти можеш зупинити і відновити гру та змінити її швидкість.)</p>
 	<div class="sim">
 			<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 	</div>
@@ -378,71 +379,71 @@
 	<div class="sim">
 			<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
-	<p>Return of the exponential decay!</p>
-	<p>This is the <strong>SEIRS Model</strong>. The final &quot;S&quot; stands for <icon s></icon> Susceptible, again.</p>
+	<p>І знову крива експоненційного згасання!</p>
+	<p>Це є модель <strong>SEIRS</strong>. Де літера &quot;S&quot; (від англ. Susceptible) позначає <icon s></icon> сприйнятливих, знову.</p>
 	<p><img src="pics/seirs.png" alt=""></p>
-	<p>Now, let's simulate a COVID-19 outbreak, over 10 years, with no interventions... <em>if immunity only lasts a year:</em></p>
+	<p>А зараз, давайте просимулюємо спалах COVID-19, протягом 10 років, без заходів втручання... <em>якщо імунітет діє лише один рік:</em></p>
 	<div class="sim">
 			<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
 	</div>
-	<p>In previous simulations, we only had <em>one</em> ICU-overwhelming spike. Now, we have several, <em>and</em> <icon i></icon> cases come to a rest <em>permanently at</em> ICU capacity. (Which, remember, we <em>tripled</em> for these simulations)</p>
-	<p>R = 1, it's <strong>endemic.</strong></p>
-	<p>Thankfully, because summer reduces R, it'll make the situation better:</p>
+	<p>В попередній симуляції ми спостерігали лише <em>один</em> спалах який перенавантажив палати інтенсивної терапіх, <em>та</em> кількість <icon i></icon> випадків залишається <em>завжди</em> рівна місткості палат інтенсивної терапії. (Що, знову зауважимо, ми збільшили <em>втричі</em> для цих симуляцій)</p>
+	<p>R = 1, це - <strong>ендемія.</strong></p>
+	<p>На щастя, літо зменшує R, тому це зробить ситуацію краще:</p>
 	<div class="sim">
 			<iframe src="sim?stage=yrs-3&format=lines&height=640" width="800" height="640"></iframe>
 	</div>
-	<p>Oh.</p>
-	<p>Counterintuitively, summer makes the spikes worse <em>and</em> regular! This is because summer reduces new <icon i></icon>s, but that in turn reduces new immune <icon r></icon>s. Which means immunity plummets in the summer, <em>creating</em> large regular spikes in the winter.</p>
-	<p>Thankfully, the solution to this is pretty straightforward – just vaccinate people every fall/winter, like we do with flu shots:</p>
-	<p><strong>(After playing the recording, try simulating your own vaccination campaigns! Remember you can pause/continue the sim at any time)</strong></p>
+	<p>Ох.</p>
+	<p>Парадоксально, літо робить спалахи гіршими <em>та</em> регулярними! Через те, що літо зменшує кількість нових <icon i></icon>, але цим самим зменшує кількість людей з імунітетом <icon r></icon>. Що означає імунітет падає влітку, <em>створюючи</em> великі регулярні спалахи взимку.</p>
+	<p>На щастя, вирішення є дуже простим – вакцинуйте людей кожну осінь/зиму, так само як роблять це з щепленням від грипу:</p>
+	<p><strong>(Після прогавання запису, спробуйте симуляцію вашої власної кампанії вакцинації! Пам'ятайте що ви можете зупини та продовжити симуляцію в будь-який момент)</strong></p>
 	<div class="sim">
 			<iframe src="sim?stage=yrs-4&format=lines" width="800" height="540"></iframe>
 	</div>
-	<p>But here's the scarier question:</p>
-	<p>What if there's no vaccine for <em>years</em>? Or <em>ever?</em></p>
-	<p><strong>To be clear: this is unlikely.</strong> Most epidemiologists expect a vaccine in 1 to 2 years. Sure, there's never been a vaccine for any of the other coronaviruses before, but that's because SARS was eradicated quickly, and &quot;the&quot; common cold wasn't worth the investment.</p>
-	<p>Still, infectious disease researchers have expressed worries: What if we can't make enough?<sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup> What if we rush it, and it's not safe?<sup class="footnote-ref"><a href="#fn39" id="fnref39">[39]</a></sup></p>
-	<p>Even in the nightmare &quot;no-vaccine&quot; scenario, we still have 3 ways out. From most to least terrible:</p>
+	<p>Але ось ще страшніше питання:</p>
+	<p>Що буде якщо вакцини не буде <em>роками</em>? Або <em>взагалі</em>?</p>
+	<p><strong>Щоб було зрозуміло: це малоймовірно.</strong> Більшість епідеміологів очікують вакцину через 1-2 роки. Так, до цього ніколи не було вакцини для будь-якого іншого коронавірусу, але це через те, що SARS був викорінений швидко, а звичайна ГРВІ не варта того.</p>
+	<p>Тим не менш, дослідники інфекційних захворювань висловили свої переживання: Що буде якщо ми не можемо зробити дотстатньо? <sup class="footnote-ref"><a href="#fn38" id="fnref38">[38]</a></sup> Що буде якщо ми поспішимо, та вона не буде безпечна? <sup class="footnote-ref"><a href="#fn39" id="fnref39">[39]</a></sup></p>
+	<p>Навіть у кошмарному &quot;без-вакцини&quot; сценарії, ми все одно маємо 3 виходи. Від найбільш до найменш страшних:</p>
 	<ol>
 	<li>
-	<p>Do intermittent or loose R &lt; 1 interventions, to reach &quot;natural herd immunity&quot;. (Warning: this will result in many deaths &amp; damaged lungs. <em>And</em> won't work if immunity doesn't last.)</p>
+	<p>Робити переривчасті або послаблені R &lt; 1 втручання, щоб досягнути &quot;колективний імунітет&quot;. (Увана: це призведе до багатьох смертей та пошкоджених легенів. <em>Та</em> не спрацює якщо імунітет не є дуже довгостроковим.)</p>
 	</li>
 	<li>
-	<p>Do the R &lt; 1 interventions forever. Contact tracing &amp; wearing masks just becomes a new norm in the post-COVID-19 world, like how STI tests &amp; wearing condoms became a new norm in the post-HIV world.</p>
+	<p>Робити R &lt; 1 заходи втручання постійно. Відстеження контактів та носіння масок стає новою нормою у після-COVID-19 світі, так само як ІПСШ тести та використання презервативу стали новою нормою у після-ВІЛ світі.</p>
 	</li>
 	<li>
-	<p>Do the R &lt; 1 interventions until we develop treatments that make COVID-19 way, way less likely to need critical care. (Which we should be doing <em>anyway!</em>) Reducing ICU use by 10x is the same as increasing our ICU capacity by 10x:</p>
+	<p>Робити R &lt; 1 заходи втручання поки ми не створимо процедури лікування, що зроблять набагато, набагато менш шанс, що лікування COVID-19 вимагатиме інтенсивної терапії. (Не дивлячись на те, що ми <em>все одно маємо</em> це робити!) Зменшення кількості палатн інтенсивної терапії в 10 разів, те саме що збільшення кількості палат в 10 разів:</p>
 	</li>
 	</ol>
-	<p><strong>Here's a simulation of <em>no</em> lasting immunity, <em>no</em> vaccine, and not even any interventions – just slowly increasing capacity to survive the long-term spikes:</strong></p>
+	<p><strong>Ось симуляція <em>без</em> довговічний імунітету, <em>без</em> вакцини та навіть без будь-який заходів втручання - лише повільно збільшуйте місткість щоб пережити довгострокові спалахи</strong></p>
 	<div class="sim">
 			<iframe src="sim?stage=yrs-5&format=lines" width="800" height="540"></iframe>
 	</div>
-	<p>Even under the <em>worst</em> worst-case scenario... life perseveres.</p>
+	<p>Навіть у <em>найгіршому</em> з найгірших випадків... життя було врятовано.</p>
 	<p>. . .</p>
-	<p>Maybe you'd like to challenge our assumptions, and try different R<sub>0</sub>'s or numbers. Or try simulating your <em>own</em> combination of intervention plans!</p>
-	<p><strong>Here's an (optional) Sandbox Mode, with <em>everything</em> available. (scroll to see all controls) Simulate &amp; play around to your heart's content:</strong></p>
+	<p>Можливо ви б хотіли заперечити нашим припущенням та спробувати інший R<sub>0</sub>'s або інші параметри. Або спробувати просимулювати вашу <em>власну</em> комбінацію заходи втручання!</p>
+	<p><strong>Ось (необов'язковий) Режим Пісочниці, зі <em>всіма</em> параметрами. (Скрольте вниз щоб побачити всі параметри) Симулюйте та грайтесь скільки вашій душі завгодно:</strong></p>
 	<div class="sim">
 			<iframe src="sim?stage=SB&format=sb" width="800" height="540"></iframe>
 	</div>
-	<p>This basic &quot;epidemic flight simulator&quot; has taught us so much. It's let us answer questions about the past few months, next few months, and next few years.</p>
-	<p>So finally, let's return to...</p>
+	<p>Основний &quot;симулятор польоту епідемії&quot; навчив нас багато чому. Він дав нам можливість відповісти на питання про декілька минулих місяців, декілька місяців у майбутньому та наступні роки.</p>
+	<p>Тому врешті-решт, давайте повернемось до...</p>
 	<div class="section chapter">
 		<div>
 			<img src="banners/curve.png" height=480 style="position: absolute;"/>
-			<div>The Now</div>
+			<div>Сьогодення</div>
 		</div>
 	</div>
-	<p>Plane's sunk. We've scrambled onto the life rafts. It's time to find dry land.<sup class="footnote-ref"><a href="#fn40" id="fnref40">[40]</a></sup></p>
-	<p>Teams of epidemiologists and policymakers (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">left</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">right</a>, and <a href="https://ethics.harvard.edu/covid-roadmap">multi-partisan</a>) have come to a consensus on how to beat COVID-19, while protecting our lives <em>and</em> liberties.</p>
-	<p>Here's the rough idea, with some (less-consensus) backup plans:</p>
+	<p>Літак потонув. Ми заскочили на рятувальні плоти. Настав час щоб знайти нарешті землю.<sup class="footnote-ref"><a href="#fn40" id="fnref40">[40]</a></sup></p>
+	<p>Команди епідеміологів та політиків (<a href="https://www.americanprogress.org/issues/healthcare/news/2020/04/03/482613/national-state-plan-end-coronavirus-crisis/">лівих</a>, <a href="https://www.aei.org/research-products/report/national-coronavirus-response-a-road-map-to-reopening/">правих</a>, та <a href="https://ethics.harvard.edu/covid-roadmap">багатопартійних</a>) мають певний консенсус в тому як побороти COVID-19, тим часом захищаючи наші життя <em>та</em> своботи.</p>
+	<p>Ось приблизна ідея, з деякими (менш популярними) запасними планами:</p>
 	<p><img src="pics/plan.png" alt=""></p>
-	<p>So what does this mean for YOU, right now?</p>
-	<p><strong>For everyone:</strong> Respect the lockdown so we can get out of Phase I asap. Keep washing those hands. Make your own masks. Download a <em>privacy-protecting</em> contact tracing app when those are available next month. Stay healthy, physically &amp; mentally! And write your local policymaker to get off their butt and...</p>
-	<p><strong>For policymakers:</strong> Make laws to support folks who have to self-isolate/quarantine. Hire more manual contact tracers, <em>supported</em> by privacy-protecting contact tracing apps. Direct more funds into the stuff we should be building, like...</p>
-	<p><strong>For builders:</strong> Build tests. Build ventilators. Build personal protective equipment for hospitals. Build tests. Build masks. Build apps. Build antivirals, prophylactics, and other treatments that aren't vaccines. Build vaccines. Build tests. Build tests. Build tests. Build hope.</p>
-	<p>Don't downplay fear to build up hope. Our fear should <em>team up</em> with our hope, like the inventors of airplanes &amp; parachutes. Preparing for horrible futures is how we <em>create</em> a hopeful future.</p>
-	<p>The only thing to fear is the idea that the only thing to fear is fear itself.</p>
+	<p>То що це значить для ВАС, зараз?</p>
+	<p><strong>Для всіх:</strong> Поважайте карантин, щоб ми всі могли вийти з першої фази якмога швидке. Продовжуйте мити ті руки. Робіть свої власні маски для обличчя. Завантажуйте додатки для відстеження контактів <em>які поважають приватність</em>, після того як вони стануть доступні через декілька місяців. Будьте здорові, фізично та психологічно! Та пишіть своїй місцевій владі підняти свою дупу і...</p>
+	<p><strong>Для політиків:</strong> Створюйте закони для підтримки людей які мають бути в самоізоляці/карантині. Наймайте більше людей для відстеження контактованих людей, яким будуть <em>допомогати</em> додатки <em>які поважають приватність</em> відстеження контактів. Виділяйте більше коштів до речей які ми маємо будувати, як наприклад...</p>
+	<p><strong>Для виробників/творців:</strong> Створюйте тести. Створюйте вентилятори. Створюйте персональні засоби захисту для лікарень. Створюйте тести. Створюйте вентилятори. Створюйте додатки. Створюйте противірусні, профілактичні та інші засоби, крім вакцин. Створюйте вакцини. Створюйте тести. Створюйте тести. Створюйте тести. Створюйте надію.</p>
+	<p>Не знецінюйте страх, щоб створювати надію. Наш страх має <em>йти в крок</em> з нашою надією, як винахідники літаків та парашутів. Готуючись до страшного майбутнього, ми <em>формуємо</em> обнадійливе майбутнє.</p>
+	<p>Єдина річ яке ми маємо боятись, це ідея що єдине чого нам требя боятись, це страху самого по собі. <em><strong>TODO</strong></em></p>
 	<hr class="footnotes-sep">
 	<section class="footnotes">
 	<ol class="footnotes-list">
@@ -463,35 +464,35 @@
 	</li>
 	<li id="fn7" class="footnote-item"><p>“Припускаючи, що інкубаційний період розподілення в середньому 5.2 days з іншого дослідженна ранніх випадків COVID-19, ми зробили висновок, що розповсюдження вірусу починалося з 2.3 days (95% CI, 0.8–3.0 дні) перед появою симптомів” (переклад: Припускаючи, що симптоми розпочинаються з 5 дня, розповсюдження починається 2 дні раніше = Розповсюдження починається з 3 дня) <a href="https://www.nature.com/articles/s41591-020-0869-5">He, X., Lau, E.H.Y., Wu, P. et al.</a> <a href="#fnref7" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn8" class="footnote-item"><p>“The median R value for seasonal influenza was 1.28 (IQR: 1.19–1.37)” <a href="https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480">Biggerstaff, M., Cauchemez, S., Reed, C. et al.</a> <a href="#fnref8" class="footnote-backref">↩︎</a></p>
+	<li id="fn8" class="footnote-item"><p>“Медіанне значення R для сезонного грипу було 1.28 (IQR: 1.19–1.37)” <a href="https://bmcinfectdis.biomedcentral.com/articles/10.1186/1471-2334-14-480">Biggerstaff, M., Cauchemez, S., Reed, C. et al.</a> <a href="#fnref8" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn9" class="footnote-item"><p>“We estimated the basic reproduction number R0 of 2019-nCoV to be around 2.2 (90% high density interval: 1.4–3.8)” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/">Riou J, Althaus CL.</a> <a href="#fnref9" class="footnote-backref">↩︎</a></p>
+	<li id="fn9" class="footnote-item"><p>“За нашими оцінками, R0 2019-nCoV приблизно дорівнює 2.2 (90% інтервалу найбільшої густини: 1.4–3.8)” <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7001239/">Riou J, Althaus CL.</a> <a href="#fnref9" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn10" class="footnote-item"><p>“we calculated a median R0 value of 5.7 (95% CI 3.8–8.9)” <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article">Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.</a> <a href="#fnref10" class="footnote-backref">↩︎</a></p>
+	<li id="fn10" class="footnote-item"><p>“Ми підрахували медіанне значення R0 дорівнює 5.7 (95% CI 3.8–8.9)” <a href="https://wwwnc.cdc.gov/eid/article/26/7/20-0282_article">Sanche S, Lin YT, Xu C, Romero-Severson E, Hengartner N, Ke R.</a> <a href="#fnref10" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn11" class="footnote-item"><p>This is pretending that you're equally infectious all throughout your &quot;infectious period&quot;. Again, simplifications for educational purposes. <a href="#fnref11" class="footnote-backref">↩︎</a></p>
+	<li id="fn11" class="footnote-item"><p>Це лише враховуючи, що ти однаково розповсюджуєш інфекцію протягом усього періоду, коли ти можеш заражати інших. Знову ж таки, це спрощення для освітніх цілей. <a href="#fnref11" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn12" class="footnote-item"><p>Remember R = R<sub>0</sub> * the ratio of transmissions still allowed. Remember also that ratio of transmissions allowed = 1 - ratio of transmissions <em>stopped</em>.</p>
-	<p>Therefore, to get R &lt; 1, you need to get R<sub>0</sub> * TransmissionsAllowed &lt; 1.</p>
-	<p>Therefore, TransmissionsAllowed &lt; 1/R<sub>0</sub></p>
-	<p>Therefore, 1 - TransmissionsStopped &lt; 1/R<sub>0</sub></p>
-	<p>Therefore, TransmissionsStopped &gt; 1 - 1/R<sub>0</sub></p>
-	<p>Therefore, you need to stop more than <strong>1 - 1/R<sub>0</sub></strong> of transmissions to get R &lt; 1 and contain the virus! <a href="#fnref12" class="footnote-backref">↩︎</a></p>
+	<li id="fn12" class="footnote-item"><p>Пам'ятай R = R<sub>0</sub> * кількість дозволених заражень. Пам'ятай також, що кількість дозволених заражень = 1 - кількість заражень, які були недопущені.</p>
+	<p>Отже, щоб отримати R &lt; 1, потрібно отримати R<sub>0</sub> * Кількість дозволених заражень &lt; 1.</p>
+	<p>Отже, Кількість дозволених заражень &lt; 1/R<sub>0</sub></p>
+	<p>Отже, 1 - Кількість недопущених заражень &lt; 1/R<sub>0</sub></p>
+	<p>Отже, Кількість недопущених заражень &gt; 1 - 1/R<sub>0</sub></p>
+	<p>Отже, потрібно зупинити більше, ніж <strong>1 - 1/R<sub>0</sub></strong> заражень, щоб отримати R &lt; 1 і приборкати вірус! <a href="#fnref12" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn13" class="footnote-item"><p><a href="https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/">&quot;Percentage of COVID-19 cases in the United States from February 12 to March 16, 2020 that required intensive care unit (ICU) admission, by age group&quot;</a>. Between 4.9% to 11.5% of <em>all</em> COVID-19 cases required ICU. Generously picking the lower range, that's 5% or 1 in 20. Note that this total is specific to the US's age structure, and will be higher in countries with older populations, lower in countries with younger populations. <a href="#fnref13" class="footnote-backref">↩︎</a></p>
+	<li id="fn13" class="footnote-item"><p><a href="https://www.statista.com/statistics/1105420/covid-icu-admission-rates-us-by-age-group/">&quot;Відсоток випадків COVID-19 у США з 12 лютого по 16 березня, які потребували палати інтенсивної терапії, відповідно до вікових груп&quot;</a>. Від 4.9% до 11.5% <em>усіх</em> COVID-19 хворих потребували ПІТ. Навіть якщо рахувати з найнижчої межі, це 5% або 1 з 20. Зверни увагу, що ці числа відповідають особливостям вікового складу США і можуть бути вищими у країнах зі старішим населенням та нижче країнах з молодшим населенням. <a href="#fnref13" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn14" class="footnote-item"><p>“Number of ICU beds = 96,596”. From <a href="https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19">the Society of Critical Care Medicine</a> USA Population was 328,200,000 in 2019. 96,596 out of 328,200,000 = roughly 1 in 3400. <a href="#fnref14" class="footnote-backref">↩︎</a></p>
+	<li id="fn14" class="footnote-item"><p>“Кількість ліжок у ПІТ = 96,596”. Від <a href="https://sccm.org/Blog/March-2020/United-States-Resource-Availability-for-COVID-19">the Society of Critical Care Medicine</a> населення США було 328,200,000 у 2019. 96,596 з 328,200,000 = приблизно 1 з 3400. <a href="#fnref14" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn15" class="footnote-item"><p>“He says that the actual goal is the same as that of other countries: flatten the curve by staggering the onset of infections. As a consequence, the nation may achieve herd immunity; it’s a side effect, not an aim. [...] The government’s actual coronavirus action plan, available online, doesn’t mention herd immunity at all.”</p>
-	<p>From a <a href="https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/">The Atlantic article by Ed Yong</a> <a href="#fnref15" class="footnote-backref">↩︎</a></p>
+	<li id="fn15" class="footnote-item"><p>“Він каже, що справжня ціль така ж, як і ціль інших країн: вирівняти криву, рівномірно розподіляючи інфікування. У наслідок, нація може отримати колективний імунітет, це побочний ефект, а не самоціль. [...] Справжній план уряду, доступний онлайн, навіть не згадує про колективний імунітет.”</p>
+	<p>З статті у <a href="https://www.theatlantic.com/health/archive/2020/03/coronavirus-pandemic-herd-immunity-uk-boris-johnson/608065/">The Atlantic by Ed Yong</a> <a href="#fnref15" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn16" class="footnote-item"><p>“All eight eligible studies reported that handwashing lowered risks of respiratory infection, with risk reductions ranging from 6% to 44% [pooled value 24% (95% CI 6–40%)].” We rounded up the pooled value to 25% in these simulations for simplicity. <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x">Rabie, T. and Curtis, V.</a> Note: as this meta-analysis points out, the quality of studies for handwashing (at least in high-income countries) are awful. <a href="#fnref16" class="footnote-backref">↩︎</a></p>
+	<li id="fn16" class="footnote-item"><p>“Всі вісім повноцінних дослідженнь стверджують, що миття рук зменшує ризик ОРВІ від 6% до 44% [сумарне значення 24% (95% CI 6–40%)].” Ми округлили сумарне значення до 25% у симуляціях для спрощення.  <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/j.1365-3156.2006.01568.x">Rabie, T. and Curtis, V.</a> Примітка: згідно з цим аналізом, дослідження про миття рук (принаймні у заможних країнах) залишають бажати кращого. <a href="#fnref16" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn17" class="footnote-item"><p>“We found a 73% reduction in the average daily number of contacts observed per participant. This would be sufficient to reduce R0 from a value from 2.6 before the lockdown to 0.62 (0.37 - 0.89) during the lockdown”. We rounded it down to 70% in these simulations for simplicity. <a href="https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html">Jarvis and Zandvoort et al</a> <a href="#fnref17" class="footnote-backref">↩︎</a></p>
+	<li id="fn17" class="footnote-item"><p>“Ми помітили зниження на 73% в середньому щоденної кількості контактів кожного учасника спостреження. Цього було би достатньо, щоб зменшити значення R0 з 2.6 перед закриттям до 0.62 (0.37 - 0.89) після закриття міста”. Ми округлили це число до 70% у симуляціях для спрощення. <a href="https://cmmid.github.io/topics/covid19/comix-impact-of-physical-distance-measures-on-transmission-in-the-UK.html">Jarvis and Zandvoort et al</a> <a href="#fnref17" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn18" class="footnote-item"><p>This distortion would go away if we plotted R on a logarithmic scale... but then we'd have to explain <em>logarithmic scales.</em> <a href="#fnref18" class="footnote-backref">↩︎</a></p>
+	<li id="fn18" class="footnote-item"><p>Це спотворення зникло б, якщо би ми помістили R на логарифмічну шкалу...але тоді довелося би пояснювати <em>Логарифмічні шкали.</em> <a href="#fnref18" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn19" class="footnote-item"><p>“Absent other interventions, a key metric for the success of social distancing is whether critical care capacities are exceeded. To avoid this, prolonged or intermittent social distancing may be necessary into 2022.” <a href="https://science.sciencemag.org/content/early/2020/04/14/science.abb5793">Kissler and Tedijanto et al</a> <a href="#fnref19" class="footnote-backref">↩︎</a></p>
+	<li id="fn19" class="footnote-item"><p>За відсутності інших заходів, ключова метрика успіху соціального дисціонування це заповненість палат інтенсивної терапії. Щоб запобігти цьому, може виникнути потреба продовжити соціальне дистанціювання або застосовувати його періодично до 2022 року.” <a href="https://science.sciencemag.org/content/early/2020/04/14/science.abb5793">Kissler and Tedijanto et al</a> <a href="#fnref19" class="footnote-backref">↩︎</a></p>
 	</li>
 	<li id="fn20" class="footnote-item"><p>See <a href="https://journals.sagepub.com/doi/abs/10.1177/1745691614568352">Figure 6 from Holt-Lunstad &amp; Smith 2010</a>. Of course, big disclaimer that they found a <em>correlation</em>. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get. <a href="#fnref20" class="footnote-backref">↩︎</a></p>
 	</li>
@@ -540,15 +541,14 @@
 	</li>
 	<li id="fn37" class="footnote-item"><p>From <a href="https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract">Bao et al.</a> <em>Disclaimer: This article is a preprint and has not been certified by peer review (yet).</em> Also, to emphasize: they only tested re-infection 28 days later. <a href="#fnref37" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn38" class="footnote-item"><p>“If a coronavirus vaccine arrives, can the world make enough?” <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a> <a href="#fnref38" class="footnote-backref">↩︎</a></p>
+	<li id="fn38" class="footnote-item"><p>“Якщо вакцина від коронавірусу з'явиться, чи зможе світ виробити її достатньо? (англ)” <a href="https://www.nature.com/articles/d41586-020-01063-8">by Roxanne Khamsi, on Nature</a> <a href="#fnref38" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn39" class="footnote-item"><p>“Don’t rush to deploy COVID-19 vaccines and drugs without sufficient safety guarantees” <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a> <a href="#fnref39" class="footnote-backref">↩︎</a></p>
+	<li id="fn39" class="footnote-item"><p>“Не спішіть задіювати COVID-19 вакцину або ліки без достатніх гарантій безпекиs” <a href="https://www.nature.com/articles/d41586-020-00751-9">by Shibo Jiang, on Nature</a> <a href="#fnref39" class="footnote-backref">↩︎</a></p>
 	</li>
-	<li id="fn40" class="footnote-item"><p>Dry land metaphor <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">from Marc Lipsitch &amp; Yonatan Grad, on STAT News</a> <a href="#fnref40" class="footnote-backref">↩︎</a></p>
+	<li id="fn40" class="footnote-item"><p>Метафора про пошук землі <a href="https://www.statnews.com/2020/04/01/navigating-covid-19-pandemic/">від Marc Lipsitch та Yonatan Grad, on STAT News</a> <a href="#fnref40" class="footnote-backref">↩︎</a></p>
 	</li>
 	</ol>
 	</section>
-
 
 
 </article>
