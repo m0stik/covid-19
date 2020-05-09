@@ -29,7 +29,7 @@
 Направду, ми (Марсель, епідеміолог та Ніккі, ілюстрації/код) стурбовані. Можемо побитися об заклад, що ти теж! Тому ми спрямували наш страх у створення цих **інтерактивних симуляцій**, щоб ти міг спрямувати свій страх у розуміння: 
 
 * **Останні декілька місяців** (епідеміологія 101, SEIR модель, R & R<sub>0</sub>)
-* **Наступні декілька місяців** (закриття країн, відстежування контактів, маски)
+* **Наступні декілька місяців** (закриття країн, відстеження контактів, маски)
 * **Наступні декілька років** (втрата імунітету? немає вакцини?)
 
 Цей гайд (опублікований 1 травня, 2020. натисни на примітку!→[^timestamp]) має за мету дати тобі надію ТА страх. Щоб подолати COVID-19 **у спосіб який також захищає наше ментальне та фінансове здоров'я**, нам потрібний оптимізм, щоб будувати плани, та песимізм, щоб мати план Б. Як сказав Gladys Bronwyn Stern, *“Оптиміст будує літаки, а песиміст шиє парашути.”*
@@ -342,262 +342,261 @@ R<sub>0</sub> для сезонних ОРВІ приблизно 1.28[^r0_flu].
 		<iframe src="sim?stage=int-4&format=lines" width="800" height="540"></iframe>
 </div>
 
-This *would* keep cases below ICU capacity! And it's *much* better than an 18-month lockdown until a vaccine is available. We just need to... shut down for a few months, open up for a few months, and repeat until a vaccine is available. (And if there's no vaccine, repeat until herd immunity is reached... in 2022.)
+Це дозволило би стримувати кількість випадків і не переповнювати палати інтенсивної терапії! І це *набагато* краще, ніж 18-місячний карантин, допоки стане доступною вакцина. Нам просто необхідно...закрити міста на декілька місяців, відкритися на декілька місяців і повторювати це, аж поки не з'явиться вакцина. (І якщо вакцини не буде, продовжувати цей сценарій до досягнення колективного імунітету...десь до 2022 року.) 
 
-Look, it's nice to draw a line saying "ICU capacity", but there's lots of important things we *can't* simulate here. Like:
+Звісно, круто просто провести лінію "Місткості палат інтенсивної терапії", але існує багато важливих факторів, які ми *не можемо* змоделювати тут. Наприклад: 
 
-**Mental Health:** Loneliness is one of the biggest risk factors for depression, anxiety, and suicide. And it's as associated with an early death as smoking 15 cigarettes a day.[^loneliness]
+**Психологічне здоров'я:** Самотність - одне з найбільших джерел депресії, тривожних розладів та суїцидів. А ще вона може призводити до ранньої смерті на рівні 15 викурених цигарок в день.[^loneliness]
 
-[^loneliness]: See [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Of course, big disclaimer that they found a *correlation*. But unless you want to try randomly assigning people to be lonely for life, observational evidence is all you're gonna get.
+[^loneliness]: Читай [Figure 6 from Holt-Lunstad & Smith 2010](https://journals.sagepub.com/doi/abs/10.1177/1745691614568352). Звісно, зверни увагу, що було виявлено саме *кореляцію*. Але, окрім спостереження, не існує іншого способу перевірити цю гіпотезу, хіба що примусово вказувати піддослідним залишатися самотніми усе життя. 
 
-**Financial Health:** "What about the economy" sounds like you care more about dollars than lives, but "the economy" isn't just stocks: it's people's ability to provide food & shelter for their loved ones, to invest in their kids' futures, and enjoy arts, foods, videogames – the stuff that makes life worth living. And besides, poverty *itself* has horrible impacts on mental and physical health.
+**Фінансове здоров'я:** "А що з економікою?" звучить так, ніби гривні важливіші за людські життя, але "економіка" - це не лише про акції: це також про спроможність людей забезпечувати себе та свої родини їжею та дахом над головою, інвестувати у майбутнє дітей, насолоджуватися мистецтвом, їжею, відеоіграми - речі, які наповнюють наше життя сенсом. До того ж, *сама по собі* бідність жахливо впливає на психологічне та фізичне здоров'я.  
 
-Not saying we *shouldn't* lock down again! We'll look at "circuit breaker" lockdowns later. Still, it's not ideal.
+Ми не кажемо, що ми *не повинні* знову сідати на карантин! Ми розглянемо "періодичні карантини" трохи пізніше. Все ж, це не ідеальний варіант.
 
-But wait... haven't Taiwan and South Korea *already* contained COVID-19? For 4 whole months, *without* long-term lockdowns?
+Але зажди...хіба Тайвань та Південна Корея вже не приборкали COVID-19? На цілих 4 місяці, *без* довготривалих закриттів міст? 
 
-How?
+Як?
 
-###Scenario 4: Test, Trace, Isolate
+###Сценарій 4: Тестувати, Відслідковувати, Ізолювати 
 
-*"Sure, we \*could've\* done what Taiwan & South Korea did at the start, but it's too late now. We missed the start."*
+*"Авжеж, ми \*могли би\* зробити те, що зробили Тайвань та Південна Корея напочатку, але вже занадто пізно. Ми прогавили початок."*
 
-But that's exactly it! “A lockdown isn't a cure, it's just a restart”... **and a fresh start is what we need.**
+То ось воно що! “Закриття міст не рецепт успіху, а можливість перезавантаження”... **і новий старт - це те, що там потрібно.**
 
-To understand how Taiwan & South Korea contained COVID-19, we need to understand the exact timeline of a typical COVID-19 infection[^timeline]:
+Щоб зрозуміти, як Тайвань та Південна Корея стримали COVID-19, нам необхідно зрозуміти точний перебіг типового зараження COVID-19[^timeline]:
 
-[^timeline]: **3 days on average to infectiousness:** “Assuming an incubation period distribution of mean 5.2 days from a separate study of early COVID-19 cases, we inferred that infectiousness started from 2.3 days (95% CI, 0.8–3.0 days) before symptom onset” (translation: Assuming symptoms start at 5 days, infectiousness starts 2 days before = Infectiousness starts at 3 days) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
+[^timeline]: **3 дні в середньому, щоб почати заражати інших:** “Припустивши, що інкубаційний період в середньому є 5.2 днів, згідно з іншим досліженням ранніх випадків COVID-19, ми зробили висновок, що розповсюдження вірусу носієм починалося з 2.3 днів (95% CI, 0.8–3.0 днів) перед початком симптомів” (переклад: Припускаючи, що симптоми починаються на 5 день, розповсюдження інфекції починається за 2 дні = Тобто розповсюдження починається на 3 день) [He, X., Lau, E.H.Y., Wu, P. et al.](https://www.nature.com/articles/s41591-020-0869-5)  
     
-    **4 days on average to infecting someone else:** “The mean [serial] interval was 3.96 days (95% CI 3.53–4.39 days)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
+    **4 дні в середньому, щоб заразити інших:** “Середній інтервал був 3.96 днів (95% CI 3.53–4.39 днів)” [Du Z, Xu X, Wu Y, Wang L, Cowling BJ, Ancel Meyers L](https://wwwnc.cdc.gov/eid/article/26/6/20-0357_article)
     
-    **5 days on average to feeling symptoms:** “The median incubation period was estimated to be 5.1 days (95% CI, 4.5 to 5.8 days)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
+    **5 днів в середньому, щоб відчути симптоми:** “Медіанний інкубаційний період від 5.1 днів (95% CI, 4.5 до 5.8 днів)” [Lauer SA, Grantz KH, Bi Q, et al](https://annals.org/AIM/FULLARTICLE/2762808/INCUBATION-PERIOD-CORONAVIRUS-DISEASE-2019-COVID-19-FROM-PUBLICLY-REPORTED)
 
 ![](pics/timeline1.png)
 
-If cases only self-isolate when they know they're sick (that is, they feel symptoms), the virus can still spread:
+Якщо інфіковані самоізолюються лише тоді, коли вони знають, що захворіли (тобто коли відчувають симптоми), вірус вже міг поширитися на інших:
 
 ![](pics/timeline2.png)
 
-And in fact, 44% of all transmissions are like this: *pre*-symptomatic! [^pre_symp]
+І наспраді, 44% всіх заражень саме такі: *перед*-симптомні! [^pre_symp]
 
-[^pre_symp]: “We estimated that 44% (95% confidence interval, 25–69%) of secondary cases were infected during the index cases’ presymptomatic stage” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
+[^pre_symp]: “Ми встановили, що 44% (95% точності, 25–69%) другорядних заражень відбулося під час передсимптомального стану перших заражень” [He, X., Lau, E.H.Y., Wu, P. et al](https://www.nature.com/articles/s41591-020-0869-5)
 
-But, if we find *and quarantine* a symptomatic case's recent close contacts... we stop the spread, by staying one step ahead!
+Але, якщо ми знаходимо та *ізолюємо* людей, які були в нещодавньому контакті з хворими з вираженими симптомами...ми зупиняємо поширення вірусу, залишаючись на крок вперед! 
 
 ![](pics/timeline3.png)
 
-This is called **contact tracing**. It's an old idea, was used at an unprecedented scale to contain Ebola[^ebola], and now it's core part of how Taiwan & South Korea are containing COVID-19!
+Це називається **відстеженням контактів**. Ідея ця не нова і була потужно використана, щоб стримати Еболу[^ebola], а зараз це ключова стратегія Тайваню та Південної Кореї щодо COVID-19!
 
-[^ebola]: “Contact tracing was a critical intervention in Liberia and represented one of the largest contact tracing efforts during an epidemic in history.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
+[^ebola]: Відстеження контактів було критично важливим заходом у Ліберії та стало одним із наймасштабніших у історії епідеміології.” [Swanson KC, Altare C, Wesseh CS, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6152989/)
 
-(It also lets us use our limited tests more efficiently, to find pre-symptomatic <icon i></icon>s without needing to test almost everyone.)
+(Це також допомагає нам розумніше використовувати обмежену кількість тестів у нашому розпорядженні, щоб знайти досимптоматичних <icon i></icon> без необхідності тестувати майже кожного.)
 
-Traditionally, contacts are found with in-person interviews, but those *alone* are too slow for COVID-19's ~48 hour window. That's why contact tracers need help, and be supported by – *NOT* replaced by – contact tracing apps.
+Традиційно, контакти встановлюються за допомогою особистих інтерв'ю, але *сам по собі* це занадто повільний спосіб для коронавірусного вікна у 48 годин. Тому він потребує додаткової підтримки - *НЕ* заміни - від додатків для відстеження контактів. 
 
-(This idea didn't come from "techies": using an app to fight COVID-19 was first proposed by [a team of Oxford epidemiologists](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
+(Ця ідея прийшла не від ІТшників: використання подібних додатків було вперше запропоноване [командою епідеміологів Oxford](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936).)
 
-Wait, apps that trace who you've been in contact with?... Does that mean giving up privacy, giving in to Big Brother?
+Зажди, то ці додатки відслідковують, з ким ти зустрічався?...Це ж означає, що ми добровільно віддаємо свою приватність на поталу "Великому Брату"? 
 
-Heck no! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, a team of epidemiologists & cryptographers (including one of us, Marcel Salathé) is *already* making a contact tracing app – with code available to the public – that reveals **no info about your identity, location, who your contacts are, or even *how many contacts* you've had.**
+З два чорти! **[DP-3T](https://github.com/DP-3T/documents#decentralized-privacy-preserving-proximity-tracing)**, команді епідеміологів та криптографів (включаючи одного з нас, Marcel Salathé) *вже* розробляють додаток для відстеження контактів, код якого знаходиться у публічному доступі. Додаток **не розкриває інформації про твою ідентичність, місцезнаходження, імена контактів та їх кількість .**
 
-Here's how it works:
+Ось як він працює:
 
 ![](pics/dp3t.png)
 
-(& [here's the full comic](https://ncase.me/contact-tracing/))
+(& [ось повний комікс](https://ncase.me/contact-tracing/))
 
-Along with similar teams like TCN Protocol[^tcn] and MIT PACT[^pact], they've inspired Apple & Google to bake privacy-first contact tracing directly into Android/iOS.[^gapple] (Don't trust Google/Apple? Good! The beauty of this system is it doesn't *need* trust!) Soon, your local public health agency may ask you to download an app. If it's privacy-first with publicly-available code, please do!
+Разом зі схожими командами, як TCN Protocol[^tcn] та MIT PACT[^pact], вони надихнули Apple та Google впровадити функцію конфіденційного відстеження контактів напряму в Android/iOS.[^gapple] (Не довіряєш Google/Apple? Добре! Привабливість цієї системи в тому, що їй *не потрібна* довіра!) Незабаром, місцеві органи охорони здоров'я можуть попросити тебе встановити додаток (або вже це зробили). Якщо це конфіденційний додаток з публічно доступним кодом, будь ласка, дослухайся до них! 
+[^tcn]: [Тимчасова Кількість Контактів, децентралізований, сфокусований на захисті конфіденційності протокол відстеження контактів](https://github.com/TCNCoalition/TCN#tcn-protocol)
 
-[^tcn]: [Temporary Contact Numbers, a decentralized, privacy-first contact tracing protocol](https://github.com/TCNCoalition/TCN#tcn-protocol)
+[^pact]: [PACT: Конфіденційне Автоматизоване Відстеження Контактів](https://pact.mit.edu/)
 
-[^pact]: [PACT: Private Automated Contact Tracing](https://pact.mit.edu/)
+[^gapple]: [Apple та Google співпрацюють над розробкою технологій для відстеження передачі COVID-19 ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Зверни увагу, що вони не розрозбляють додаток *самотужки*, лише створюють системи, які *підтримуватимуть* роботу таких додатків. 
 
-[^gapple]: [Apple and Google partner on COVID-19 contact tracing technology ](https://www.apple.com/ca/newsroom/2020/04/apple-and-google-partner-on-covid-19-contact-tracing-technology/). Note they're not making the apps *themselves*, just creating the systems that will *support* those apps.
+Але що на рахунок людей без смартфонів? Або інфікування через дверну ручки? Чи дійсно безсимптомні випадки? Додатки для відстежнення контактів не можуть зафіксувати всі зараження...*і нічого страшного!* Нам не потрібно відслідкувати *всі* передачі, лише 60%+, щоб отримати R < 1.
 
-But what about folks without smartphones? Or infections through doorknobs? Or "true" asymptomatic cases? Contact tracing apps can't catch all transmissions... *and that's okay!* We don't need to catch *all* transmissions, just 60%+ to get R < 1.
+(Відсутність симптомів у перші дні часто плутають з асимптомальністю. "Справжні" асимптоматичні випадки зустрічаються рідко:[^rant])
 
-(Rant about the confusion about pre-symptomatic vs "true" asymptomatic. "True" asymptomatics are rare:[^rant])
-
-[^rant]: Lots of news reports – and honestly, many research papers – did not distinguish between "cases who showed no symptoms when we tested them" (pre-symptomatic) and "cases who showed no symptoms *ever*" (true asymptomatic). The only way you could tell the difference is by following up with cases later.
+[^rant]: Багато новин - та й багато наукових статей - не підкреснювали відмінності між "хворими, які не мали симптомів під час тестування" (досимптоматичні) та "хворими, які *ніколи* не мали симптомів" (справжня асимптомність). Єдиний спосіб розрізнити їх - відслідковувати хворих після тестування.
    
-    Which is what [this study](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article) did. (Disclaimer: "Early release articles are not considered as final versions.") In a call center in South Korea that had a COVID-19 outbreak, "only 4 (1.9%) remained asymptomatic within 14 days of quarantine, and none of their household contacts acquired secondary infections."
+    Саме це й зробило [це дослідження](https://wwwnc.cdc.gov/eid/article/26/8/20-1274_article). (Примітка: "Ранні публікації статей не вважаються фінальними версіями.") У кол-центрі в Південній Кореї, де відбувся спалах COVID-19 , "лише 4 (1.9%) не мали ніяких симптомів протягом 14 днів карантину, й ніхто з їхніх співмешканців не інфікувався."
     
-    So that means "true asymptomatics" are rare, and catching the disease from a true asymptomatic may be even rarer!
+    Це означає, що "справжня асимптоматичність" зустрічається дуже рідко, а зараження від асимптоматичних хворих ще рідше! 
 
-Isolating *symptomatic* cases would reduce R by up to 40%, and quarantining their *pre/a-symptomatic* contacts would reduce R by up to 50%[^oxford]:
+Ізоляція хворих із *наявними симптомами* може зменшити R на 40%, а ізоляція людей, які були з ними в контакті та ще *не показують* симптомів знижує R на 50%[^oxford]:
 
-[^oxford]: From the same Oxford study that first recommended apps to fight COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) See Figure 2. Assuming R<sub>0</sub> = 2.0, they found that:    
+[^oxford]: З того ж дослідження Оксфорду, яке першим порекомендувало створити додаток для боротьби з COVID-19: [Luca Ferretti & Chris Wymant et al](https://science.sciencemag.org/content/early/2020/04/09/science.abb6936/tab-figures-data) Дивись Figure 2. Припустивши, що R<sub>0</sub> = 2.0, вони з'ясували, що:    
     
-    * Symptomatics contribute R = 0.8 (40%)
-    * Pre-symptomatics contribute R = 0.9 (45%)
-    * Asymptomatics contribute R = 0.1 (5%, though their model has uncertainty and it could be much lower)
-    * Environmental stuff like doorknobs contribute R = 0.2 (10%)
+    * Симптоматичні хворі складають R = 0.8 (40%)
+    * Досимптомні хворі R = 0.9 (45%)
+    * Асимптоматичні хворі R = 0.1 (5%, втім це число може бути набагато меншим)
+    * Зараження з навколишнього середовища, наприклад, через ручки дверей R = 0.2 (10%)
 
-    And add up the pre- & a-symptomatic contacts (45% + 5%) and you get 50% of R!
+    Додай сюди контакти хворих, які поки не мають/не матимуть симптомів(45% + 5%) і отримаєш 50% R!
 
 <div class="sim">
 		<iframe src="sim?stage=int-4a&format=calc" width="285" height="340"></iframe>
 </div>
 
-Thus, even without 100% contact quarantining, we can get R < 1 *without a lockdown!* Much better for our mental & financial health. (As for the cost to folks who have to self-isolate/quarantine, *governments should support them* – pay for the tests, job protection, subsidized paid leave, etc. Still way cheaper than intermittent lockdown.)
+Отже, навіть без ізоляції 100% всіх контактів, ми можемо отримати R < 1 *без необхідності закривати міста!* Це значно краще для нашого психологічного та фінансового благополуччя. (Держава має підтримувати тих, кому доведеться самоізолюватися, - оплатити тести, зберегти робоче місце, надати оплачуваний лікарняний тощо. Все ж значно дешевше, ніж закриття міст.)
 
-We then keep R < 1 until we have a vaccine, which turns susceptible <icon s></icon>s into immune <icon r></icon>s. Herd immunity, the *right* way:
+Потім необхідно підтримувати R < 1, допоки вакцина не стане доступною, що перетворить сприйнятливих <icon s></icon> на захищених імунітетом <icon r></icon>. *Вірний* колективний імунітет:
 
 <div class="sim">
 		<iframe src="sim?stage=int-4b&format=calc" width="285" height="230"></iframe>
 </div>
 
-(Note: this calculator pretends the vaccines are 100% effective. Just remember that in reality, you'd have to compensate by vaccinating *more* than "herd immunity", to *actually* get herd immunity)
+(Зверни увагу: цей калькулятор припускає, що вакцини діють у 100% випадків. Пам'ятай, що через цю похибку, у реальному житті для досягнення колективного імунітету потрібно вакцинувати більше людей, ніж отримаємо в результаті.)
 
-Okay, enough talk. Here's a simulation of:
+Добре, досить балачок. Ось симуляція: 
 
-1. A few-month lockdown, until we can...
-2. Switch to "Test, Trace, Isolate" until we can...
-3. Vaccinate enough people, which means...
-4. We win.
+1. Декількох місяців у карантині, допоки ми не можемо...
+2. Перейти до режиму "Тестуй, Відстежуй, Ізолюй", допоки ми не...
+3. Вакцинуємо достатньо людей, а отже...
+4. Перемога.
 
 <div class="sim">
 		<iframe src="sim?stage=int-5&format=lines" width="800" height="540"></iframe>
 </div>
 
-So that's it! That's how we make an emergency landing on this plane.
+Тож ось воно! Так ми зможемо здійснити аварійну посадку цього літака.
 
-That's how we beat COVID-19.
+Так ми зможемо подолати COVID-19.
 
 ...
 
-But what if things *still* go wrong? Things have gone horribly wrong already. That's fear, and that's good! Fear gives us energy to create *backup plans*.
+Але що, якщо *все одно* все піде погано? Вже відбулося багато недоброго. Що ж, страх - це не погано! Страх дає нам енергію розробити *план Б*. 
 
-The pessimist invents the parachute.
+Саме песиміст не забуває пошити парашут. 
 
-###Scenario 4+: Masks For All, Summer, Circuit Breakers
+###Сценарій 4+: Маски для всіх, Літо, Запобіжники 
 
-What if R<sub>0</sub> is way higher than we thought, and the above interventions, even with mild distancing, *still* aren't enough to get R < 1?
+Що як R<sub>0</sub> значно вище, ніж ми думали, й заходів, про які ми говорили, навіть з фізичним дистанціюванням, не достатньо для R < 1?
 
-Remember, even if we can't get R < 1, reducing R still reduces the "overshoot" in total cases, thus saving lives. But still, R < 1 is the ideal, so here's a few other ways to reduce R:
+Пам'ятай, навіть, якщо ми не можемо досягнути R < 1, зменшення R все одно зберігає життя. Втім R < 1 - наша ціль, тому ось декілька способів зменшити R:
 
-**Masks For All:**
+**Маски для всіх:**
 
-*"Wait,"* you might ask, *"I thought face masks don't stop you from getting sick?"*
+*"Зажди,"* можеш запитати ти, *"Я думав(ла), що маски не захищають від інфікування?"*
 
-You're right. Masks don't stop you from getting sick[^incoming]... they stop you from getting *others* sick.
+І це слушне зауваження. Маски не захищають тебе від зараження[^incoming]... вони допомагають тобі не інфікувати *інших*.
 
-[^incoming]: “None of these surgical masks exhibited adequate filter performance and facial fit characteristics to be considered respiratory protection devices.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
+[^incoming]: Жодна з представлених хірургічних масок не продемонструвала достатню фільтруючу здатність та не відповідає іншим характеристикам, щоб вважатися захисним респіраторним засобом.” [Tara Oberg & Lisa M. Brosseau](https://www.sciencedirect.com/science/article/pii/S0196655307007742)
 
-[^outgoing]: “The overall 3.4 fold reduction [70% reduction] in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
+[^outgoing]: Загальне зменшення у  3.4 рази [70% зменшення] у in aerosol copy numbers we observed combined with a nearly complete elimination of large droplet spray demonstrated by Johnson et al. suggests that surgical masks worn by infected persons could have a clinically significant impact on transmission.” [Milton DK, Fabian MP, Cowling BJ, Grantham ML, McDevitt JJ](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3591312/)
 
-[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) See Table 1: a 100% cotton T-shirt has around 2/3 the filtration efficiency as a surgical mask, for the two bacterial aerosols they tested.
+[^homemade]: [Davies, A., Thompson, K., Giri, K., Kafatos, G., Walker, J., & Bennett, A](https://www.cambridge.org/core/journals/disaster-medicine-and-public-health-preparedness/article/testing-the-efficacy-of-homemade-masks-would-they-protect-in-an-influenza-pandemic/0921A05A69A9419C862FA2F35F819D55) Дивись Table 1: 100% бавовняна футболка має 2/3 фільтруючої здатності хірургічних масок, згідно з тестуваннями двома бактеріальними аерозолями. 
 
 ![](pics/masks.png)
 
-To put a number on it: surgical masks *on the sick person* reduce cold & flu viruses in aerosols by 70%.[^outgoing] Reducing transmissions by 70% would be as large an impact as a lockdown!
+Якщо *інфікована людина* носить хірургічну маску, то це зменшує розпосюдження грипу на 70%. [^outgoing] Зменшення передачі на 70% мало би такий же вплив, як закриття міст! 
 
-However, we don't know for sure the impact of masks on COVID-19 *specifically*. In science, one should only publish a finding if you're 95% sure of it. (...should.[^replication]) Masks, as of May 1st 2020, are less than "95% sure".
+Тим не менш, ми не маємо цілковитої впевненості, що маски мають такий же вплив на COVID-19. У науці дослідження мають бути опубліковані, лише коли ти на 95% впевнений у результатах. (...мають бути.[^replication]) Станом на 1 березня 2020, впевненість у ефективності мазок менша за 95%. 
 
-[^replication]: Any actual scientist who read that last sentence is probably laugh-crying right now. See: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
+[^replication]: Будь-який справжній науковець, мабуть, вже сміється/плаче з останніх речень. Читай: [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), [the replication crisis](https://en.wikipedia.org/wiki/Replication_crisis))
 
-However, pandemics are like poker. **Make bets only when you're 95% sure, and you'll lose everything at stake.** As a recent article on masks in the British Medical Journal notes,[^precautionary] we *have* to make cost/benefit analyses under uncertainty. Like so:
+Тим не менш, пандемії чимось схожі на гру в покер. **Роби ставки, лише коли впевнений на 95%, і ти втратиш все, на що ставив.** Згідно з нещодавною статтею про маски з British Medical Journal,[^precautionary] ми *повинні* здійснювати аналіз витрат/вигоди в умовах невизначенності. Як ось цей:
 
-[^precautionary]: “It is time to apply the precautionary principle” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
+[^precautionary]: Настав час застосувати запобіжні заходи” [Trisha Greenhalgh et al \[PDF\]](https://www.bmj.com/content/bmj/369/bmj.m1435.full.pdf)
 
-Cost: If homemade cloth masks (which are ~2/3 as effective as surgical masks[^homemade]), super cheap. If surgical masks, more expensive but still pretty cheap.
+Витрати: Саморобні тканяні маски (~2/3 такі ж ефективні, як і хірургічні[^homemade]), коштують дуже дешево. Хірургічні маски більш дорогі, але все ж доволі дешеві. 
 
-Benefit: Even if it's a 50–50 chance of surgical masks reducing transmission by 0% or 70%, the average "expected value" is still 35%, same as a half-lockdown! So let's guess-timate that surgical masks reduce R by up to 35%, discounted for our uncertainty. (Again, you can challenge our assumptions by turning the sliders up/down)
+Вигода: Навіть якщо існує 50–50 шанс, що хірургічні маски зменшують передачу на 0% або 70%, середня "очікувана цінність" все ще 35%, така ж як у частковому закритті міст! Тож давай змоделюємо, що хірургічні маски зменшують R на 35%, зі знижкою на нашу невпевненість. (Знову ж, ти можеш перевірити наші припущення, змінюючи параметри)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6a&format=calc" width="285" height="380"></iframe>
 </div>
 
-(other arguments for/against masks:[^mask_args])
+(інші аргументи за/проти масок:[^mask_args])
 
-[^mask_args]: **"We need to save supplies for hospitals."** *Absolutely agreed.* But that's more of an argument for increasing mask production, not rationing. In the meantime, we can make cloth masks.
+[^mask_args]: **"Нам потрібно зберегти запаси для лікарень."** *Повністю погоджуємося.* Але це швидше аргумент на користь збільшення виготовлення масок, а не їх розподілення. Тим часом, ми можемо користуватися тканяними масками.
 
-   **"They're hard to wear correctly."** It's also hard to wash your hands according to the WHO Guidelines – seriously, "Step 3) right palm over left dorsum"?! – but we still recommend handwashing, because imperfect is still better than nothing.
+   **"Їх складно носити правильно."** Мити руки відповідно до вказівок ВОЗ теж складно, але ми все одно рекомендуємо це робити, тому що неідальне миття рук, краще жодного. 
    
-   **"It'll make people more reckless with handwashing & social distancing."** Sure, and safety belts make people ignore stop signs, and flossing makes people eat rocks. But seriously, we'd argue the opposite: masks are a *constant physical reminder* to be careful – and in East Asia, masks are also a symbol of solidarity!
+   **"Люди почнуть більш недбало ставитися до миття рук та соціального дистанціювання."** Звісно, і паски безпеки змушують людей ігнорувати дорожні знаки, а зубна нитка змушує їсти каміння. Але, якщо серйозно, ми би могли сказати протилежне: маски є *постійним фізичним нагадуванням* залишатися обережними, а в Східній Азії маски це також символ солідарності! 
     
     
 
-Masks *alone* won't get R < 1. But if handwashing & "Test, Trace, Isolate" only gets us to R = 1.10, having just 1/3 of people wear masks would tip that over to R < 1, virus contained!
+*Самі лише* маски не зменшать R до R < 1. Але якщо миття рук та "Тестуй, Відстежуй, Ізолюй" призводять до R = 1.10, то носіння масок лише 1/3 людей зменшить R до R < 1, вірус стримано!
 
-**Summer:**
+**Літо:**
 
-Okay, this isn't an "intervention" we can control, but it will help! Some news outlets report that summer won't do anything to COVID-19. They're half right: summer won't get R < 1, but it *will* reduce R.
+Окей, це не "захід", який ми можемо контролювати, але він допоможе! Деякі статті кажуть, що літо ніяк не повпливає на COVID-19. Вони частково праві: літо не знизить R до R < 1, але воно *зменшить* R.
 
-For COVID-19, every extra 1° Celsius (2.2° Fahrenheit) makes R drop by 1.2%.[^heat] The summer-winter difference in New York City is 15°C (60°F), so summer will make R drop by 18%.
+Для COVID-19, кожен додатковий 1° знижує R на 1.2%.[^heat] До прикладу, у Нью-Йорку різниця температур влітку та взимку складає 15°C, тож влітку R знизиться на 18%.
 
-[^heat]: “One-degree Celsius increase in temperature [...] lower[s] R by 0.0225” and “The average R-value of these 100 cities is 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
+[^heat]: “Підвищення температури на 1 градус Цельсію [...] знижує [s] R на 0.0225” і “Середнє значення R цих 100 міст 1.83”. 0.0225 ÷ 1.83 = ~1.2%. [Wang, Jingyuan and Tang, Ke and Feng, Kai and Lv, Weifeng](https://papers.ssrn.com/sol3/Papers.cfm?abstract_id=3551767)
 
 <div class="sim">
 		<iframe src="sim?stage=int-6b&format=calc" width="285" height="220"></iframe>
 </div>
 
-Summer alone won't make R < 1, but if we have limited resources, we can scale back some interventions in the summer – so we can scale them *higher* in the winter.
+Лише літо не допоможе досягнути R < 1, але, якщо ми обмежені у ресурсах, ми можемо скоротити деякі заходи влітку, щоб застосувати їх на більшу потужність взимку. 
 
-**A "Circuit Breaker" Lockdown:**
+**Запобіжне Закриття Міст:**
 
-And if all that *still* isn't enough to get R < 1... we can do another lockdown.
+І якщо б цього всього *все ще* не було достатньо для R < 1... ми могли би закрити міста знову.
 
-But we wouldn't have to be 2-months-closed / 1-month-open over & over! Because R is reduced, we'd only need one or two more "circuit breaker" lockdowns before a vaccine is available. (Singapore had to do this recently, "despite" having controlled COVID-19 for 4 months. That's not failure: this *is* what success takes.)
+Але нам би не довелося мати 2 місяці закриття та 1 місяць без карантину знову та знову. Оскільки R було б зменшене, нам потрібно було би лише один чи два "запобіжних" карантини до того, як вакцина стане доступною. (Нещодавно Сингапуру довелося це зробити, незважаючи на те, що вони тримали COVID-19 під контролем 4 місяці. Це не поразка: це передумова успіху.)
 
-Here's a simulation a "lazy case" scenario:
+Ось симуляція цього сценарію:
 
-1. Lockdown, then
-2. A moderate amount of hygiene & "Test, Trace, Isolate", with a mild amount of "Masks For All", then...
-3. One more "circuit breaker" lockdown before a vaccine's found.
+1. Карантин потім 
+2. Миття рук та "Тестуй, Відстежуй, Ізолюй", з помірною кількістю "Масок для всіх", потім...
+3. Ще один "запобіжний карантин" перед появою вакцини. 
 
 <div class="sim">
 		<iframe src="sim?stage=int-7&format=lines&height=620" width="800" height="620"></iframe>
 </div>
 
-Not to mention all the *other* interventions we could do, to further push R down:
+Не кажучи вже про інші заходи, які можуть допомогти знизити R:
 
-* Travel restrictions/quarantines
-* Temperature checks at malls & schools
-* Deep-cleaning public spaces
-* [Replacing hand-shaking with foot-bumping](https://twitter.com/V_actually/status/1233785527788285953)
-* And all else human ingenuity shall bring
+* Обмеження подорожей
+* Перевірка температури в магазинах та школах
+* Дезінфікація публічних місць
+* [Заміна потискання рук на буцання ніг](https://twitter.com/V_actually/status/1233785527788285953)
+* І все інше, що принесе людська винахідливість
 
 . . .
 
-We hope these plans give you hope. 
+Ми сподіваємося, що ці сценарії дають тебе обнадіють.
 
-**Even under a pessimistic scenario, it *is* possible to beat COVID-19, while protecting our mental and financial health.** Use the lockdown as a "reset button", keep R < 1 with case isolation + privacy-protecting contract tracing + at *least* cloth masks for all... and life can get back to a normal-ish!
+**Навіть у песимістичному сценарії, все ще *можливо* подолати COVID-19, захистивши наше психологічне та фінансове здоров'я.** Треба лишень використовувати закриття міст як кнопку перезапуску, тримати R < 1, ізолюючи окремі випадки та відстежуючи контакти з конфіденційними мобільними додатками і мати *хоча би* саморобні маски для всіх...і життя зможе повернутися до більш-менш нормального!
 
-Sure, you may have dried-out hands. But you'll get to invite a date out to a comics bookstore! You'll get to go out with friends to watch the latest Hollywood cash-grab. You'll get to people-watch at a library, taking joy in people going about the simple business of *being alive.*
+Звісно, твої руки стануть пересушеними від частого миття. Але ти зможеш запросити свою кохану людину на побачення до книгарні! Ти зможеш сходити на кіно з друзями. Ти зможеш спостерігати за людьми навколо, які насолоджуються простими радощами життя.
 
-Even under the worst-case scenario... life perseveres.
+Навіть у найгіршому сценарію... життя вистоїть.
 
-So now, let's plan for some *worse* worst-case scenarios. Water landing, get your life jacket, and please follow the lights to the emergency exits:
+Тож зараз давай сплануємо для *найгіршого* сценарію. Приземлення на воду, будь ласка, дістаньте свої рятувальні жилети та слідуйте до аварійних виходів:
 
 <div class="section chapter">
     <div>
 		<img src="banners/curve.png" height=480 style="position: absolute;"/>
-        <div>The Next Few Years</div>
+        <div>Наступні декілька років</div>
     </div>
 </div>
 
-You get COVID-19, and recover. Or you get the COVID-19 vaccine. Either way, you're now immune...
+Ти інфікуєшся COVID-19 та одужуєш. Або прищеплюєшся від COVID-19. У будь-якому разі, тепер в тебе є імунітет...
 
-...*for how long?*
+...*на як довго?*
 
-* COVID-19 is most closely related to SARS, which gave its survivors 2 years of immunity.[^SARS immunity]
-* The coronaviruses that cause "the" common cold give you 8 months of immunity.[^cold immunity]
-* There's reports of folks recovering from COVID-19, then testing positive again, but it's unclear if these are false positives.[^unclear]
-* One *not-yet-peer-reviewed* study on monkeys showed immunity to the COVID-19 coronavirus for at least 28 days.[^monkeys]
+* COVID-19 найбільш схожий на SARS, який давав одужавшим 2 роки імунітету.[^SARS immunity]
+* Коронавіруси, які призводять до звичайної застуди, дають 8 місяців імунітету.[^cold immunity]
+* Існують свідчення одужавших від COVID-19 та повторно тестованих позитивно, але не зрозуміло, чи ці тести були хибно позитивні.[^unclear]
+* Одне неперевірене дослідження на мавпах показало імунітет до COVID-19 принаймні на 28 днів.[^monkeys]
 
-But for COVID-19 *in humans*, as of May 1st 2020, "how long" is the big unknown.
+Але станом на 1 травня 2020, імунітет **людей* до COVID-19 залишається невідомим.
 
-[^SARS immunity]: “SARS-specific antibodies were maintained for an average of 2 years [...] Thus, SARS patients might be susceptible to reinfection ≥3 years after initial exposure.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "Sadly" we'll never know how long SARS immunity would have really lasted, since we eradicated it so quickly.
+[^SARS immunity]: “Антитіла SARS зберігалися протягом 2 років в середньому [...] Тож хворі на SARS могли заразитися повторно через ≥3 роки після початкового зараження.” [Wu LP, Wang NC, Chang YH, et al.](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2851497/) "На жаль", ми ніколи не дізнаємося, на скільки довго вистачає імуінітету від SARS, оскільки ми позбулися його так швидко. 
 
-[^cold immunity]: “We found no significant difference between the probability of testing positive at least once and the probability of a recurrence for the beta-coronaviruses HKU1 and OC43 at 34 weeks after enrollment/first infection.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
+[^cold immunity]: Ми не виявили великої різниці між вірогідністю мати позитивний тест хоча б одного разу та вірогідністю повторення бета-коронавірусів HKU1 та OC43 на 34 тижні після першого зараження.” [Marta Galanti & Jeffrey Shaman (PDF)](http://www.columbia.edu/~jls106/galanti_shaman_ms_supp.pdf)
 
-[^unclear]: “Once a person fights off a virus, viral particles tend to linger for some time. These cannot cause infections, but they can trigger a positive test.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
+[^unclear]: Коли людина справляєтсья з вірусом, вірусні частинки залишаються на якийсь час. Вони не можуть спричинити інфікування, але можуть спричинити позитивний тест.” [from STAT News by Andrew Joseph](https://www.statnews.com/2020/04/20/everything-we-know-about-coronavirus-immunity-and-antibodies-and-plenty-we-still-dont/)
 
-[^monkeys]: From [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Disclaimer: This article is a preprint and has not been certified by peer review (yet).* Also, to emphasize: they only tested re-infection 28 days later. 
+[^monkeys]: Від [Bao et al.](https://www.biorxiv.org/content/10.1101/2020.03.13.990226v1.abstract) *Примітка: Ця стаття була лише у перед-публікації і не була розглянена експертами.* Також варто зауважити, що вони проводили тести на повторне інфікування лише після 28 днів.
 
-For these simulations, let's say it's 1 year.
-**Here's a simulation starting with 100% <icon r></icon>**, exponentially decaying into susceptible, no-immunity <icon s></icon>s after 1 year, on *average*, with variation:
+Для цих симуляцій припустимо, що імунітет зберігається 1 рік. 
+**Ось симуляція, що починається зі 100% <icon r></icon>**, експоненційно знижуючись у сприйнятливих, неімунних <icon s></icon> через 1 рік в середньому з варіацією: 
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-1&format=lines&height=600" width="800" height="600"></iframe>
@@ -605,11 +604,11 @@ For these simulations, let's say it's 1 year.
 
 І знову крива експоненційного згасання!
 
-Це є модель **SEIRS**. Де літера "S" (від англ. Susceptible) позначає <icon s></icon> сприйнятливих, знову.
+Це та сама **SEIRS Модель**. Остання "S" означає <icon s></icon> - знову Сприйнятливі. 
 
 ![](pics/seirs.png)
 
-А зараз, давайте просимулюємо спалах COVID-19, протягом 10 років, без заходів втручання... *якщо імунітет діє лише один рік:*
+Тепер, давай зсимуляємо спалах COVID-19 протягом 10 років без вжиття жодних заходів... *з умовою, що імунітет зберігається лише 1 рік:*
 
 <div class="sim">
 		<iframe src="sim?stage=yrs-2&format=lines&height=600" width="800" height="600"></iframe>
